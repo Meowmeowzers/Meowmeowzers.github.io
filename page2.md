@@ -1,7 +1,7 @@
 ---
-title: Index
+title: page2
 layout: template
-filename: index.md
+filename: page2.md
 --- 
 
 <html>
