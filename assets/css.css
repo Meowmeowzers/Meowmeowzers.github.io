@@ -2,14 +2,13 @@ body {
 	background-color:grey;
 }
 .div-banner {
-	height:300px;
+	height:400px;
 	background-color:black;
+	color:white;
 }
 .div_content {
 	height:300px;
 }
 .headcon {
-	padding:15px;
 	background-color:gray;
-	width:100%;
 }
