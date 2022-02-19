@@ -1,7 +1,10 @@
 body {
 	bg-color:grey;
 }
-
+.div-banner {
+	height:300px;
+	bg-color:black;
+}
 .div_content {
 	height:300px;
 }
