@@ -1,3 +1,7 @@
 body {
 	bg-color:grey;
 }
+
+.div_content {
+	height:250px;
+}
