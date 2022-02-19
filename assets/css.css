@@ -9,3 +9,8 @@ body {
 .div_content {
 	height:300px;
 }
+.headcon {
+	padding:10px;
+	background-color:gray;
+	width:100%;
+}
