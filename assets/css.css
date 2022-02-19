@@ -8,7 +8,9 @@ body {
 }
 .div_content {
 	height:300px;
+	width:100%;
 }
 .headcon {
 	background-color:gray;
+	width:100%;
 }
