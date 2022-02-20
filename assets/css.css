@@ -1,5 +1,11 @@
-
-
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color:black;
+}
 .navbar {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -18,25 +24,35 @@
 .div-banner {
 	padding:20px 100px 20px 20px;
 	height:400px;
-	background-color:black;
+	background-color:#222222;
 	color:#de4e4e;
-	border:1px solid red;
+	font-family: 'Roboto Mono', monospace;
+	font-size:25px;
+	margin-bottom:30px;
 }
 
 .div-content {
-	border:1px white solid;
-	height:400px;
+	min-height:400px;
 	width:100%;
-	background-color:black;
+	background-color:#222222;
 	color:white;
+	margin-bottom:30px;
+	padding-bottom:20px;
 }
 .div-content p{
 	margin:15px;
+
 }
 
 .headcon {
-	padding:15px;
-	background-color:#DE4E4E;
-	width:100%;
-	color:#3B3636;
+	padding:1px 20px 1px;
+	background-color:#Da3535;
+	color:#000000;
+	font-family: 'Roboto Mono', monospace;
+	/*
+	
+	*/
+}
+.margin-bot {
+	margin-bottom:30px;
 }
