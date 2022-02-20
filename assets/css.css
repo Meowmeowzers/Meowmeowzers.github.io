@@ -7,20 +7,31 @@ body{
 	background-color:black;
 }
 .navbar {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 10px 0px;
 	border: 0;
 	border-radius: 0;
-	margin-bottom: 0;
+	margin: 0;
 	font-size: 12px;
 	letter-spacing: 5px;
-	color:#ffffff;
+	color:#555;	
+	background-color:#444444;
+	width:100%;
+	display:inline;
 }
-.navbar {
+.navbar ul{
+	float:right;
 	list-style-type:none;
 }
-
-.navbar-nav li a:hover {
+.navbar li{
+	padding:0;
+	display:inline;	
+}
+.navbar a,a:link,a:visited {
+	color:#ffffff;
+	text-decoration:none;
+	
+}
+.navbar li a:hover {
 	color: #cd9cff !important;
 }
 	
@@ -59,7 +70,9 @@ body{
 .margin-bot {
 	margin-bottom:30px;
 }
-
+.float-left{
+	float:left;
+}
 
 @media screen and (max-width: 600px) {
   .div-banner {
