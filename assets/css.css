@@ -6,10 +6,9 @@ body{
 	font-family: 'Roboto', sans-serif;
 	background-color:black;
 }
-.navbar {
+.nsavbar {
 	padding-top: 10px 0px;
-	border: 0;
-	border-radius: 0;
+	border: 1px solid white;
 	margin: 0;
 	font-size: 12px;
 	letter-spacing: 5px;
@@ -32,7 +31,7 @@ body{
 	
 }
 .navbar li a:hover {
-	color: #cd9cff !important;
+	color: #30c5c5;
 }
 	
 .div-banner {
