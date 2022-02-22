@@ -5,38 +5,43 @@ font-family: 'Roboto Mono', monospace;
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color:black;
+	margin-top:0;
 }
-.nsavbar {
-	padding-top: 10px 0px;
-	border: 1px solid white;
-	margin: 0;
+
+.nav{
 	font-size: 12px;
 	letter-spacing: 5px;
-	color:#555;	
-	background-color:#444444;
-	width:100%;
+	padding:14px;
+	margin: 0px 0px;
+	overflow: hidden;
+	width:97%;
+	position:fixed;
+}
+
+.nav ul{
+	margin:0;
+	padding:0;
+}
+.nav li{
+	list-style-type:none;
+	text-decoration:none;
 	display:inline;
 }
-.navbar ul{
-	float:right;
-	list-style-type:none;
-}
-.navbar li{
-	padding:0;
-	display:inline;	
-}
-.navbar a,a:link,a:visited {
+
+.nav a,a:link,a:visited {
+	padding:10px;
 	color:#ffffff;
 	text-decoration:none;
 	
 }
-.navbar li a:hover {
+.nav li a:hover {
 	color: #30c5c5;
+
 }
 	
 .div-banner {
-	padding:10px;
-	height:400px;
+	padding:20px 10px;
+	height:600px;
 	background-color:#222222;
 	color:#de4e4e;
 	font-family: 'Roboto Mono', monospace;
@@ -62,17 +67,11 @@ body{
 	background-color:#C53030;
 	color:#000000;
 	font-family: 'Roboto Mono', monospace;
-	/*
-	
-	*/
 }
 .margin-bot {
 	margin-bottom:30px;
 }
-.float-left{
-	float:left;
-}
-
+/**********/
 @media screen and (max-width: 600px) {
   .div-banner {
     font-size:20px;
@@ -83,4 +82,19 @@ body{
    .headcon{
 	  font-size:16px;
   }
+}
+/*********/
+
+
+.clear{
+	clear:both;
+}
+
+/********/
+.float-left{
+	float:left !important;
+}
+
+.float-right{
+	float:right !important;
 }
