@@ -41,7 +41,7 @@ body{
 	
 .div-banner {
 	padding:20px 10px;
-	height:600px;
+	height:100vh;
 	background-color:#222222;
 	color:#de4e4e;
 	font-family: 'Roboto Mono', monospace;
