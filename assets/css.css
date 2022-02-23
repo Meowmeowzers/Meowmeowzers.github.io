@@ -5,17 +5,18 @@ font-family: 'Roboto Mono', monospace;
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color:black;
-	margin-top:0;
+	margin:0;
 }
 
 .nav{
 	font-size: 12px;
 	letter-spacing: 5px;
-	padding:14px;
-	margin: 0px 0px;
+	padding:20px;
+	margin: 0px;
 	overflow: hidden;
-	width:97%;
+	width:95vw;
 	position:fixed;
+	transition:0.5s
 }
 
 .nav ul{
@@ -29,7 +30,7 @@ body{
 }
 
 .nav a,a:link,a:visited {
-	padding:10px;
+	padding:20px;
 	color:#ffffff;
 	text-decoration:none;
 	
@@ -77,7 +78,7 @@ body{
     font-size:20px;
   }
   .div-content p{
-	  font-size:10px;
+	  font-size:12px;
   }
    .headcon{
 	  font-size:16px;

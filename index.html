@@ -16,13 +16,9 @@
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" id="nav">
 <div class="float-left">
 <ul>
-	<li><a href="page2.html">WHO</a></li>
-	<li><a href="page2.html">WHAT</a></li>
-	<li><a href="page2.html">WHEN</a></li>
-	<li><a href="page3.html">WHERE</a></li>
 	<li><a href="page1.html">ME</a></li>
 </ul>
 </div>
@@ -32,11 +28,10 @@
 		<li><a href="page2.html">WHAT</a></li>
 		<li><a href="page2.html">WHEN</a></li>
 		<li><a href="page3.html">WHERE</a></li>
-		<li><a href="page1.html">ME</a></li>
 </ul>
 </div>
 <div class="clear"></div>
-<hr>
+
 </nav>
 
 <div class="div-banner">
@@ -47,8 +42,8 @@
 
 <div class="div-content">
 	<div class="headcon"><h1>Who am I?</h1></div>
-	<p>si meowmeow ako</p>
-	<p>si ange panget</p>
+	<p>Meowmeowzers</p>
+	<p></p>
 	<p>si xander mabaho</p>
 	<p>si jp bading</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
@@ -72,4 +67,17 @@
   
     <div></div>
 </body>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+    document.getElementById("nav").style.backgroundColor = "#222222";
+	document.getElementById("nav").style.borderBottom = "1px solid #555";
+  } else {
+    document.getElementById("nav").style.backgroundColor = "";
+	document.getElementById("nav").style.borderBottom = "";
+  }
+}
+</script>
 </html>
