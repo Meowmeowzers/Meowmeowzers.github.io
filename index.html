@@ -35,7 +35,6 @@
 </nav>
 
 <div class="div-banner">
-<br><br><br><br><br><br><br>
 <h1>My Personal Web Page</h1>
   <hr>
 </div>
@@ -43,23 +42,43 @@
 <div class="div-content">
 	<div class="headcon"><h1>Who am I?</h1></div>
 	<p>Meowmeowzers</p>
-	<p></p>
-	<p>si xander mabaho</p>
-	<p>si jp bading</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+	<dl>
+		<dt>Best Weapons</dt>
+		<dd>C++</dd>
+		<dd>HTML,CSS,JS</dd>
+		<dd>Bootstrap</dd>
+		<dt>Familliar Weapons</dt>
+		<dd>C++</dd>
+		<dd>HTML,CSS,JS</dd>
+		<dd>Bootstrap</dd>
+		<dt>Traits</dt>
+		<dd>C++</dd>
+		<dd>HTML,CSS,JS</dd>
+		<dd>Bootstrap</dd>
+	</dl>
+	<p>Currently a 3rd Year student. insert interesting details.....</p>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 </div>
 <div class="div-content">
 	<div class="headcon"><h1>Projects</h1></div>
 	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+	<p>.....</p>
+	<p>.....</p>
+	<p>.....</p>
+	<p>.....</p>
 </div>
 <div class="div-content">
 	<div class="headcon"><h1>Logs</h1></div>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	<p>.....</p>
+	<p>.....</p>
+	<p>.....</p>
+	<p>.....</p>
 </div>
-<div class="div-content margin-bot">
+<div class="div-content margin-bot-30">
 	<div class="headcon"><h1>Changes</h1></div>
 	<p>2021 Nov - Created Webpage</p>
     <p>2022 Feb - Started Working on it during free time</p>
@@ -73,10 +92,12 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
     document.getElementById("nav").style.backgroundColor = "#222222";
-	document.getElementById("nav").style.borderBottom = "1px solid #555";
+	document.getElementById("nav").style.borderBottom = "1px solid #444";
+	document.getElementById("nav").style.opacity= ".95";
   } else {
     document.getElementById("nav").style.backgroundColor = "";
 	document.getElementById("nav").style.borderBottom = "";
+	document.getElementById("nav").style.opacity= "";
   }
 }
 </script>
