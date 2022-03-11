@@ -5,19 +5,24 @@
 <!link rel="stylesheet" href="./assets/css.css">
 </head>
 <style>
-#canvas {
+body{
+color:white;
+background-color:#666666;
+}
 
-border:2px solid gray;
+#canvas {
+background-color:#000;
+border:2px solid black;
 width:100%;
-height:100%;
+height:90%;
 }
 </style>
 <body>
 <h1>Moving Rectangle</h1>
-<p id="p">Paragraph</p>
 <canvas id="canvas" height="800" width="800">
 	YOUR BROWSER DOES NOT SUPPORT HTML5
 </canvas>
+<p id="p">Paragraph</p>
 </body>
 
 <script>
@@ -29,23 +34,35 @@ window.onload = function(){
 canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 
-var x=400;
-var y=500;
-var size=1.0;
-var turn=0;
+var x=200, y=200;
+var size=1.0, turn=0;
+var t;
 function draw(){
+//clear canvas
 	ctx.clearRect(0,0,800,800);
+//fps calculate
+	var timePassed = (Date.now() - t) / 1000;
+	t = Date.now();
+	var fps = Math.round(1 / timePassed);
+	
+//fps text
+	ctx.font = "16px Arial";
+	ctx.fillStyle = '#ffffff';
+	ctx.fillText("FPS: "+fps,10,20);
+	
+//rectangle	
 	ctx.beginPath();
-	//ctx.strokeStyle = "green";
-	ctx.rect(x,y,200 * size,100 * size);
-	ctx.fillStyle="yellow";
-	//ctx.stroke();
+//ctx.strokeStyle = "green";
+	ctx.rect(x,y,300 * size,190 * size);
+	ctx.fillStyle="#ffffff";
+//ctx.stroke();
 	ctx.fill();
 	
 	x += 10;
 		if (x >= 900) {
 			x = -100;
 		}
+	
 	/*
 	if (size <= 2.0 && turn == 0) {
 		size += 0.1;
@@ -53,6 +70,7 @@ function draw(){
 		size -= 0.1;
 	}
 	*/
+	//window.requestAnimationFrame(draw);
 }
 setInterval(draw,100);
 
