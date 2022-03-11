@@ -25,9 +25,9 @@
 <div class="float-right">
 	<ul>
 		<li><a href="page2.html">WHO</a></li>
-		<li><a href="page2.html">WHAT</a></li>
-		<li><a href="page2.html">WHEN</a></li>
-		<li><a href="page3.html">WHERE</a></li>
+		<li><a href="page3.html">WHAT</a></li>
+		<li><a href="js-rect-anim.html">WHEN</a></li>
+		<li><a href="js-canvas.html">WHERE</a></li>
 </ul>
 </div>
 <div class="clear"></div>
@@ -48,7 +48,7 @@
 		<dd>HTML,CSS,JS</dd>
 		<dd>Bootstrap</dd>
 		<dt>Familliar Weapons</dt>
-		<dd>C++</dd>
+		<dd>Php</dd>
 		<dd>HTML,CSS,JS</dd>
 		<dd>Bootstrap</dd>
 		<dt>Traits</dt>
@@ -68,6 +68,14 @@
 	<p>.....</p>
 	<p>.....</p>
 	<p>.....</p>
+</div>
+<div class="div-content">
+	<div class="headcon"><h1>Test content</h1></div>
+	<div>
+		<div class="card"></div>
+		<div class="card"></div>
+		<div class="card"></div>
+	</div>
 </div>
 <div class="div-content">
 	<div class="headcon"><h1>Logs</h1></div>
@@ -90,7 +98,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+  if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
     document.getElementById("nav").style.backgroundColor = "#222222";
 	document.getElementById("nav").style.borderBottom = "1px solid #444";
 	document.getElementById("nav").style.opacity= ".95";
