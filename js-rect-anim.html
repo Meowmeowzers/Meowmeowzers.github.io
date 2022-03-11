@@ -37,6 +37,7 @@ ctx = canvas.getContext("2d");
 var x=200, y=200;
 var size=1.0, turn=0;
 var t;
+let speed = 100;
 function draw(){
 //clear canvas
 	ctx.clearRect(0,0,800,800);
@@ -70,9 +71,10 @@ function draw(){
 		size -= 0.1;
 	}
 	*/
-	//window.requestAnimationFrame(draw);
+	
 }
-setInterval(draw,100);
+window.requestAnimationFrame(draw);
+setInterval(draw,16);
 
 };
 </script>
