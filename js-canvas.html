@@ -61,7 +61,7 @@ ctx.stroke();
 ctx.fill();
 
 //arcs
- const x = 40,
+	const x = 40,
         y = canvas.height / 2,
         space = 10,
         radius = 30,
@@ -77,9 +77,19 @@ ctx.fill();
 var img = new Image();
 img.src = 'https://blob.sololearn.com/avatars/sololearn.jpg';
 img.onload = function(){
-ctx.drawImage(img, 500, 400, 100, 100);
+ctx.drawImage(img, 700, 400, 100, 100);
 }
 
+function draw(){
+	ctx.beginPath();
+	ctx.strokeStyle = "green";
+	ctx.rect(400,500,111,50);
+	ctx.fillStyle="yellow";
+	ctx.stroke();
+	ctx.fill();
+	
+}
+draw();
 };
 </script>
 </html>
