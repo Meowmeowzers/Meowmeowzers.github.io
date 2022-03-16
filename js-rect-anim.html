@@ -8,13 +8,15 @@
 body{
 color:white;
 background-color:#000;
+margin:0;
+
 }
 
 #canvas {
 background-color:#222;
 border:2px solid white;
-width:100%;
-height:90%;
+width:95vw;
+height:90vh;
 }
 </style>
 <body>
@@ -27,7 +29,7 @@ height:90%;
 <button id="down">Move Down</button>
 <button id="drct">Get Direction</button>
 
-<canvas id="canvas" height="800" width="800">
+<canvas id="canvas" height="700" width="800">
 	YOUR BROWSER DOES NOT SUPPORT HTML5
 </canvas>
 <p id="fps">Paragraph</p>
@@ -47,6 +49,10 @@ window.onload = function(){
 canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 
+//var res_canvas = document.getElementById('canvas');
+//var width = res_canvas.width;
+//var height = res_canvas.height;
+
 var x=200, y=200;
 var fps = 0;
 var t = 0;
@@ -58,8 +64,8 @@ let right = document.getElementById("right");
 let left = document.getElementById("left");
 let up = document.getElementById("up");
 let down = document.getElementById("down");
-
 let btn_getdirection = document.getElementById("drct");
+
 btn_getdirection.onclick = function (){
 document.getElementById("text").innerHTML = direction;
 }
@@ -88,7 +94,7 @@ function draw(){
 	dtime = (performance.now() - t) / 1000;
 	t = performance.now();
 	fps = Math.round(1 / dtime);
-	console.log(dtime);
+	//console.log(dtime);
 //fps text
 	ctx.font = "16px Arial";
 	ctx.fillStyle = '#ffffff';
@@ -96,7 +102,7 @@ function draw(){
 	
 //rectangle	
 	ctx.beginPath();
-	ctx.rect(x,y,300, 100);
+	ctx.rect(x,y,100, 100);
 	ctx.fillStyle="#ffffff";
 	ctx.fill();
 	

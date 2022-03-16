@@ -6,6 +6,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	background-color:black;
 	margin:0;
+	padding:0;
 }
 
 .nav{
@@ -39,7 +40,6 @@ body{
 }
 .nav li a:hover {
 	color: #30c5c5;
-
 }
 	
 .div-banner {
@@ -50,8 +50,8 @@ body{
 	font-family: 'Roboto Mono', monospace;
 	font-size:25px;
 	margin-bottom:30px;
-
 }
+
 .div-banner h1{
 	padding-top:30vh;
 	width:70%;
@@ -76,15 +76,30 @@ body{
 	border-bottom:1px solid white;
 	padding:10px;
 	margin:20px;
-	
 }
+.slideshow{
+	width:100%;
+	height:80vh;
+	padding:10px;
+	border:2px solid white;
+}
+.slideshow-now{}
+.slideshow-next{}
+.slideshow-prev{}
+.slideshow-1{}
+.slideshow-2{}
+.slideshow-3{}
+
 .card{
 	box-sizing:border-box;
-	width:33%;
+	display:block;
+	overflow:hidden;
+	width:100%;
 	height:60px;
 	padding:20px;
-	border:2px solid black;
-	background-color:gray;
+	border:2px solid white;
+	background-color:;
+
 }
 /**********/
 /**********/
