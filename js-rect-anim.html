@@ -9,26 +9,38 @@ body{
 color:white;
 background-color:#000;
 margin:0;
-
 }
 
 #canvas {
 background-color:#222;
 border:2px solid white;
-width:95vw;
-height:90vh;
+
 }
+
+@media only screen and (max-width: 800px) {
+	#canvas{
+		width:95vw;	
+		}
+}
+@media only screen and (min-width: 800px) {
+	#canvas{
+		width:800px;		
+		}
+}
+
+
 </style>
 <body>
 <a href="index.html">Go HOME</a>
 <h1 id="r">Moving Rectangle</h1>
 <p id="text"></p>
-<button id="right">Move Right</button>
-<button id="left">Move Left</button>
-<button id="up">Move Up</button>
-<button id="down">Move Down</button>
-<button id="drct">Get Direction</button>
-
+<div>
+	<button id="right">Move Right</button>
+	<button id="left">Move Left</button>
+	<button id="up">Move Up</button>
+	<button id="down">Move Down</button>
+	<button id="drct">Get Direction</button>
+</div>
 <canvas id="canvas" height="700" width="800">
 	YOUR BROWSER DOES NOT SUPPORT HTML5
 </canvas>
