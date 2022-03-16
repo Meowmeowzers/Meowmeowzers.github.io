@@ -9,6 +9,7 @@ body{
 color:white;
 background-color:#000;
 margin:0;
+font-family: 'Roboto', sans-serif;
 }
 
 #canvas {
@@ -16,7 +17,16 @@ background-color:#222;
 border:2px solid white;
 
 }
-
+.but,a:link,a:visited {
+	padding:10px;
+	padding-bottom:0;
+	color:#ffffff;
+	text-decoration:none;
+	transition:.3s;
+}
+a:hover {
+	color: #30c5c5;
+}
 @media only screen and (max-width: 800px) {
 	#canvas{
 		width:95vw;	
@@ -31,7 +41,9 @@ border:2px solid white;
 
 </style>
 <body>
+<div class="but">
 <a href="index.html">Go HOME</a>
+</div>
 <h1 id="r">Moving Rectangle</h1>
 <p id="text"></p>
 <div>
