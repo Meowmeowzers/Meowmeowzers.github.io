@@ -7,6 +7,7 @@ body{
 	background-color:black;
 	margin:0;
 	padding:0;
+	overflow-x:hidden;
 }
 
 .nav{
@@ -23,7 +24,6 @@ body{
 
 .nav ul{
 	margin:0;
-	margin-right:5vw;
 	padding:0;
 }
 .nav li{
@@ -38,10 +38,13 @@ body{
 	text-decoration:none;
 	transition:.3s;
 }
-.nav li a:hover {
+.nav a:hover {
 	color: #30c5c5;
 }
-	
+.nav-dropdown-btn a{
+	display:none;
+	float:right;
+}
 .div-banner {
 	padding:20px 10px;
 	height:95vh;
@@ -50,6 +53,7 @@ body{
 	font-family: 'Roboto Mono', monospace;
 	font-size:25px;
 	margin-bottom:30px;
+	box-sizing:border-box;
 }
 
 .div-banner h1{
@@ -63,6 +67,7 @@ body{
 	color:white;
 	margin-bottom:30px;
 	padding-bottom:20px;
+	box-sizing:border-box;
 }
 .div-content p, dl{
 	margin:20px;
@@ -71,6 +76,7 @@ body{
 .headcon {
 	color: #30c5c5;
 	font-family: 'Roboto Mono', monospace;
+	box-sizing:border-box;
 }
 .headcon h1 {
 	border-bottom:1px solid white;
@@ -82,67 +88,69 @@ body{
 	height:80vh;
 	padding:10px;
 	border:2px solid white;
+
 }
 .slideshow-now{}
 .slideshow-next{}
 .slideshow-prev{}
-.slideshow-1{}
-.slideshow-2{}
-.slideshow-3{}
+.slides{
+	display:none;
+	width:100%;
+	height:100%;
+}
 
 .card{
-	box-sizing:border-box;
-	display:block;
-	overflow:hidden;
-	width:100%;
+	width:50%;
 	height:60px;
 	padding:20px;
 	border:2px solid white;
 	background-color:;
-
 }
 /**********/
-/**********/
+/*Media Queries for screen size*/
 @media screen and (max-width: 600px) {
-  .div-banner {
-    font-size:20px;
-  }
-  .div-content p{
-	  font-size:12px;
-  }
-   .headcon{
-	  font-size:16px;
-  }
+	.nav-hide a{
+		display:none;
+	}
+	.nav-dropdown-btn a{
+		display:inline;
+	}
+	.div-banner {
+		font-size:20px;
+	}
+	.div-content p{
+		font-size:13px;
+	}
+	.headcon{
+		font-size:16px;
+	}
 @media only screen and (min-width: 600px) {}
 @media only screen and (min-width: 768px) {}
 @media only screen and (min-width: 992px) {}
 @media only screen and (min-width: 1200px) {}
 }
-/*********/
+
+/*Quick classes*/
+.clear{clear:both;}
+.float-left{float:left !important;}
+.float-right{float:right !important;}
+.margin-bot-30 {margin-bottom:30px;}
+
+/*object fit tells how an image or video will fit;define size to see effect*/
+.fit-fill {object-fit:fill;}
+.fit-contain {object-fit:contain;}
+.fit-cover {object-fit:cover;}
+.fit-scale-down {object-fit:scale-down;}
+.fit-none {object-fit:none;}
+
+/*Columns*/
+.col.s1{width:8%}
+.col.s2{width:16%}
+.col.s3{width:24%}
 
 
-.clear{
-	clear:both;
-}
-.float-left{
-	float:left !important;
-}
+/*Quick/Save Colors*/
+.red{color:#de4e4e;}
+.skyblue{color:#de4e4e;}
+.red1{background-color:#C53030;}
 
-.float-right{
-	float:right !important;
-}
-.margin-bot-30 {
-	margin-bottom:30px;
-}
-
-/********/
-
-
-
-
-
-/*
-background-color:#C53030; redcolor
-color: #30c5c5; skyblue
-color:#de4e4e; red
-*/
