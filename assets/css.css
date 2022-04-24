@@ -66,7 +66,7 @@ body{
 	background-color:#222222;
 	color:white;
 	margin-bottom:30px;
-	padding-bottom:20px;
+
 	box-sizing:border-box;
 }
 .div-content p, dl{
@@ -95,7 +95,7 @@ body{
 .slideshow-prev{}
 .slides{
 	display:none;
-	width:100%;
+	width:95%;
 	height:100%;
 }
 
@@ -105,6 +105,19 @@ body{
 	padding:20px;
 	border:2px solid white;
 	background-color:;
+}
+
+.chip{
+	border:1px solid white;
+	border-radius:15px;
+	padding:5px;
+}
+.btn-arw{
+	border:1px solid white;
+	display:inline;
+	padding:5px 10px 5px 10px;
+	width:10px;
+	cursor:pointer;
 }
 /**********/
 /*Media Queries for screen size*/
@@ -131,11 +144,22 @@ body{
 }
 
 /*Quick classes*/
+.border{border:1px solid green;}
 .clear{clear:both;}
 .float-left{float:left !important;}
 .float-right{float:right !important;}
-.margin-bot-30 {margin-bottom:30px;}
-
+.marg-bot-30{margin-bottom:30px;}
+.marg-auto{margin:auto;}
+.width-auto{width:auto;}
+.width-100{width:100%;}
+.width-50{width:50%;}
+.width-25{width:25%;}
+.width-10{width:10%;}
+.center2{
+    display:table;
+	margin:0 auto;
+}
+.centert{text-align:center;}
 /*object fit tells how an image or video will fit;define size to see effect*/
 .fit-fill {object-fit:fill;}
 .fit-contain {object-fit:contain;}
@@ -150,7 +174,25 @@ body{
 
 
 /*Quick/Save Colors*/
-.red{color:#de4e4e;}
 .skyblue{color:#de4e4e;}
 .red1{background-color:#C53030;}
+.red{color:#de4e4e;}
+.orange{color:#ff9a00}
+.yellow{color:#fdff00}
+.green{color:#22ff00}
+.blue{color:#0000ff}
+.purple{color:#ad00ff}
+.white{color:#fff}
+.black{color:#000}
+.gray{color:#777}
+.bg-color-red{background-color:#de4e4e}
+.bg-color-orange{background-color:#ff9a00}
+.bg-color-yellow{background-color:#fdff00}
+.bg-color-green{background-color:#22ff00}
+.bg-color-blue{background-color:#0000ff}
+.bg-color-purple{background-color:#ad00ff}
+.bg-color-white{background-color:#fff}
+.bg-color-black{background-color:#000}
+.bg-color-gray{background-color:#777}
+
 
