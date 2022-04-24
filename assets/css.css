@@ -86,13 +86,9 @@ body{
 .slideshow{
 	width:100%;
 	height:80vh;
-	padding:10px;
-	border:2px solid white;
-
+	border:1px solid white;
 }
-.slideshow-now{}
-.slideshow-next{}
-.slideshow-prev{}
+
 .slides{
 	display:none;
 	width:95%;
@@ -108,17 +104,18 @@ body{
 }
 
 .chip{
-	border:1px solid white;
-	border-radius:15px;
+	border-radius:20px;
 	padding:5px;
 }
 .btn-arw{
 	border:1px solid white;
 	display:inline;
-	padding:5px 10px 5px 10px;
+	padding:10px 15px 10px 15px;
 	width:10px;
+	text-align:center;
 	cursor:pointer;
 }
+.btn-arw:hover{background-color:white;color:black;}
 /**********/
 /*Media Queries for screen size*/
 @media screen and (max-width: 600px) {
@@ -155,11 +152,20 @@ body{
 .width-50{width:50%;}
 .width-25{width:25%;}
 .width-10{width:10%;}
-.center2{
-    display:table;
-	margin:0 auto;
-}
+.center2{display:table;margin:0 auto;}
 .centert{text-align:center;}
+
+/*Absolute Positioning*/
+.absl{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);}
+.abslt{position:absolute;top:0%;left:0%;}
+.abslb{position:absolute;bottom:0%;left:0%;}
+.absr{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);}
+.absrt{position:absolute;top:0%;right:0%;}
+.absrb{position:absolute;bottom:0%;right:0%;}
+.absm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+.absmt{position:absolute;top:0%;left:50%;transform:translate(-50%,0%);}
+.absmb{position:absolute;bottom:0%;left:50%;transform:translate(-50%,0%);}
+
 /*object fit tells how an image or video will fit;define size to see effect*/
 .fit-fill {object-fit:fill;}
 .fit-contain {object-fit:contain;}
