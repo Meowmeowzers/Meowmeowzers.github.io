@@ -23,7 +23,7 @@
 		<li class="float-left"><a href="page1.html">ME</a></li>
 		<div class="float-right">
 			<li class="nav-hide"><a href="page2.html">ABOUT</a></li>
-			<li class="nav-hide"><a href="js-rect-anim.html">PROJECTS</a></li>
+			<li class="nav-hide"><a href="js-rect-anim.html">WORK</a></li>
 			<li class="nav-hide"><a href="js-canvas.html">CONTACT</a></li>
 			<li class="nav-dropdown-btn"><a href="#">V</a></li>
 		</div>
@@ -34,7 +34,7 @@
 </nav>
 
 <div class="div-banner">
-<h1>Meowmeowzers Page page page</h1>
+<h1>Meowmeowzers Page Hello World</h1>
 <hr>
 </div>
 
@@ -69,13 +69,38 @@
 	<span class="chip bg-color-green black">Android Studio</span>
 	<span class="chip bg-color-green black">QT</span>
 				
-	<p>Currently a 3rd Year student. insert interesting details.....</p>
+	<p>Currently a poor 3rd Year student. insert interesting details.....</p>
 	<p>Hallu ange, jagpol, bilom, sandog, meowmeow</p>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 	
 </div>
 <div class="div-content">
-	<div class="headcon"><h1>Projects</h1></div>
+	<div class="headcon"><h1>Work</h1></div>
+	<div class="slideshow" style="position:relative;">
+		<div class="slides absm">slide 1</div>
+		<div class="card slides absm">slide 2</div>
+		<div class="card slides absm">slide 3</div>
+		<img class="slides fit-contain" src=".\assets\Screenshot1.png" style="">
+		<img class="slides fit-cover" src=".\assets\Screenshot2.png" style="">
+		<img class="slides fit-fill" src=".\assets\Screenshot3.png" style="">
+		<div class="btn-arw absl" onclick="nxtSlide(-1)">&#10094;</div>
+		<div class="btn-arw absr" onclick="nxtSlide(1)">&#10095;</div>
+		<div class="btn-arw absm" >m</div>
+		<div class="btn-arw absmb">mb</div>
+		<div class="btn-arw absmt" >mt</div>
+		<div class="btn-arw abslt" >lt</div>
+		<div class="btn-arw abslb" >lb</div>
+		<div class="btn-arw absrt" >rt</div>
+		<div class="btn-arw absrb" >rb</div>
+	</div>
+	<div class="centert">
+		<span class="slideSeek" onclick="nowSlide(1)">1</span>
+		<span class="slideSeek" onclick="nowSlide(2)">2</span>
+		<span class="slideSeek" onclick="nowSlide(3)">3</span>
+		<span class="slideSeek" onclick="nowSlide(4)">4</span>
+		<span class="slideSeek" onclick="nowSlide(5)">5</span>
+		<span class="slideSeek" onclick="nowSlide(6)">6</span>
+	</div>
 	<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 	<p>.....</p>
@@ -83,34 +108,6 @@
 	<p>.....</p>
 	<p>.....</p>
 </div>
-
-<div class="div-content">
-<div class="headcon"><h1>Test content</h1></div><br>
-	<div class="slideshow" style="position:relative;">
-		<div class="card slides absm">slide 1</div>
-		<div class="card slides absm">slide 2</div>
-		<div class="card slides absm">slide 3</div>
-		<img class="slides fit-contain" src=".\assets\Screenshot1.png" style="">
-		<img class="slides fit-cover" src=".\assets\Screenshot2.png" style="">
-		<img class="slides fit-fill" src=".\assets\Screenshot3.png" style="">
-		<div class="btn-arw absl" onclick="plusDivs(-1)">&#10094;</div>
-		<div class="btn-arw absr" onclick="plusDivs(1)">&#10095;</div>
-		<div class="btn-arw absmb">mb</div>
-		<div class="btn-arw absmt" >mt</div>
-		<div class="btn-arw abslt" >lt</div>
-		<div class="btn-arw absrt" >rt</div>
-		<div class="btn-arw abslb" >lb</div>
-		<div class="btn-arw absrb" >rb</div>
-		<div class="btn-arw absm" >m</div>
-	</div>
-	<div class="centert">
-
-		<span class="demo" onclick="currentDiv(1)"></span>
-		<span class="demo" onclick="currentDiv(2)"></span>
-		<span class="demo" onclick="currentDiv(3)"></span>
-	</div>
-</div>
-
 
 <div class="div-content">
 	<div class="headcon"><h1>Logs</h1></div>
@@ -127,15 +124,18 @@
 	<div class="headcon"><h1>Changes</h1></div>
 	<p>2021 Nov - Created Github/Webpage</p>
     <p>2022 Feb - Started Working on it during free time</p>
-    <p>2022 Apr - Prototype slideshow, broke some stuff</p>
-    <p>2022 Apr - "Chips", slideshow buttons</p>
+    <p>2022 Apr - Prototype slideshow css js, broke some stuff</p>
+    <p>2022 Apr - "Chips", slideshow buttons, css absolute</p>
+    <p>2022 Apr - Seeker, Renamed some elements</p>
 </div>
-  
-    <div></div>
+<footer class="div-content">
+<div class="headcon"><h1>Contact</h1></div>
+</footer>
 </body>
-<script>
-window.onscroll = function() {scrollFunction()};
 
+<script>
+//navbar scroll script
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
     document.getElementById("nav").style.backgroundColor = "#222222";
@@ -147,32 +147,31 @@ function scrollFunction() {
 	document.getElementById("nav").style.opacity= "";
   }
 }
+
 //slide show
 var slideIndex = 1;
-showDivs(slideIndex);
+showSlide(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function nxtSlide(n) {
+  showSlide(slideIndex += n);
 }
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function nowSlide(n) {
+  showSlide(slideIndex = n);
 }
 
-function showDivs(n) {
-  var i;//index array
-  var x = document.getElementsByClassName("slides");//set var x as array of slides classes
-  var dots = document.getElementsByClassName("demo");//set var dots as array of demo classes
-  if (n > x.length) {slideIndex = 1}//if index is more than length of array go back to 1
-  if (n < 1) {slideIndex = x.length}//if index is less than 1 set index to max length of array
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  //set all slides to display none
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");//used for small circles navigations
-  }
-  x[slideIndex-1].style.display = "block";//show current slide/index
-  dots[slideIndex-1].className += " w3-white";//used for small circles navigations
+function showSlide(n) {
+	var i;//index array
+	var x = document.getElementsByClassName("slides");//set var x as array of slides classes
+	var seek = document.getElementsByClassName("slideSeek");//set var dots as array of slideSeek classes
+	if (n > x.length) {slideIndex = 1}//if index is more than length of array, go back to 1
+	if (n < 1) {slideIndex = x.length}//if index is less than 1, set index to max length of array
+	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}  //set all slides to display none
+	for (i = 0; i < seek.length; i++) {
+	seek[i].className = seek[i].className.replace(" bg-color-white", "");//remove background color from unselected seeker
+	}
+	x[slideIndex-1].style.display = "block";//show current slide/index
+	seek[slideIndex-1].className += " bg-color-white";//add background color to current seeker
 }
 //slideshow
 </script>
