@@ -321,7 +321,7 @@ footer .div-title{
 	.home {
 		flex-wrap:wrap;
 		justify-content:center;
-		padding:0px 10px;
+		padding:0px 5px;
 		height:95vh;
 		font-size:25px;
 	}
@@ -341,7 +341,7 @@ footer .div-title{
 		font-size:28px;
 	}
 	.div-content-left{
-		padding:18px;
+		padding:5px;
 		width:95%;
 		font-size:21px;
 		text-indent:40px;
