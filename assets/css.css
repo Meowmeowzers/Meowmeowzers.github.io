@@ -63,7 +63,7 @@ a{
 }
 
 .div-content{
-	margin:16px 32px;
+	margin:16px 16px;
 	padding-top:16px;
 }
 
@@ -340,9 +340,13 @@ footer .div-title{
 		width:90%;
 		font-size:28px;
 	}
+	.div-content{
+		margin:4px 4px;
+		padding-top:8px;
+	}
 	.div-content-left{
 		padding:5px;
-		width:95%;
+		width:98%;
 		font-size:16px;
 		text-indent:40px;
 		line-height:1.2;
