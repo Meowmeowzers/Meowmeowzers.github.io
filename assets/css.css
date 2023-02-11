@@ -195,7 +195,7 @@ a{
 .skill-item{
 	display:flex;
 	height:100px;
-	width:500px;
+	width:40%;
 	color:white;
 	padding:0px;
 }
@@ -211,19 +211,20 @@ a{
 .skill-title{
 	display:flex;
 	align-items:flex-end;
-	justify-content:left;
 	font-size:18px;
-	width:400px;
+	padding-top:10px;
+	width:90%;
 	height:30%;			
 }
 
 .skill-bar-container{
-	padding:20px 0;
+	padding:5px 0;
+	
 }
 
 .skill-bar{
 	background-color:#888;
-	width:400px;
+	width:100%;
 	border-radius:10px;
 }
 
@@ -353,9 +354,9 @@ footer .div-title{
 	}
 	
 	.skill-item{
-		margin:5px 0;
+		margin:2px 0;
 		height:100px;
-		width:99%;
+		width:98%;
 	}
 	.skill-icon{
 		align-self:center;
@@ -363,14 +364,15 @@ footer .div-title{
 		height:80%;	
 	}
 	.skill-title{
-		font-size:24px;
+		display:flex;
+		align-items:flex-end;
+		font-size:16px;
 		height:30%;			
 	}
 	.skill-bar-container{
-		padding:20px 0;
+		padding:10px 0;
 	}
 	.skill-bar{
-		width:100%;
 		border-radius:20px;
 		height:32px;
 	}
