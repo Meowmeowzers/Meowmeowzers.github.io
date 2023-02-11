@@ -1,179 +1,644 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>My Personal Webpage</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./assets/css.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@1,700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-	<!--- Bootstrap link save
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	--->
-</head>
-<body>
-
-<nav class="nav" id="nav">
-	
-	
-	<ul>
-		<li class="float-left"><a href="page1.html">ME</a></li>
-		<div class="float-right">
-			<li class="nav-hide"><a href="page2.html">ABOUT</a></li>
-			<li class="nav-hide"><a href="js-rect-anim.html">WORK</a></li>
-			<li class="nav-hide"><a href="js-canvas.html">CONTACT</a></li>
-			<li class="nav-dropdown-btn"><a href="#">V</a></li>
-		</div>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./assets/css.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@1,700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+		<title>My Personal Webpage</title>
+		<style>
+		
+			body {
+				background-color:#222;
+				color:white;
+				margin:0;
+				padding:0;
+				min-height:2000px;
+				font-family: 'Roboto', sans-serif;
+				box-sizing:border-box;
+			}
 			
-	</ul>
-	
-	<div class="clear"></div>
-</nav>
+			.navbar{
+				width:100%;
+				padding:0;
+				margin:0;
+				position:fixed;
+			}
+			.navbar li {
+				display:inline;
+				font-size:20px;
+				padding:20px 20px;
+			}
+			.navbar li a:hover{
+				color: #30c5c5;
+			}
+			.navbar .navicon{
+				float:left;
+				display:inline;
+				padding:20px 20px;
+			}
+			
+			.navbar .hidden{
+				display:none;
+				float:right;
+			}
 
-<div class="div-banner">
-<h1>Meowmeowzers Page Hello World</h1>
-<hr>
-</div>
-
-<div class="div-content">
-	<div class="headcon"><h1>Who am I?</h1></div>
-	<p>Meowmeowzers</p>
-	<dl>
-		<dt>Programming Languages</dt>
-		<dd>C++, C#, Java, Python</dd>
-		<dt>Web Development</dt>
-		<dd>HTML,CSS,JS</dd>
-		<dt>Android App Development</dt>
-		<dd>Android Studio, Java, Kotlin</dd>
-		<dt>Game Development</dt>
-		<dd>Unity, C#, Javascript</dd>
-		<dt>Miscellaneous</dt>
-		<dd>PHP, MySQL</dd>
-	</dl>
-	<span class="chip bg-color-red gray">C++</span>
-	<span class="chip bg-color-orange white">C#</span>
-	<span class="chip bg-color-yellow blue">Java</span>
-	<span class="chip bg-color-green purple">Python</span>
-	<span class="chip bg-color-blue black">HTML</span>
-	<span class="chip bg-color-purple green">asdf</span>
-	<span class="chip bg-color-black yellow">CSS</span>
-	<span class="chip bg-color-white orange">Javascript</span>
-	<span class="chip bg-color-gray black">PHP</span>
-	<span class="chip bg-color-gray black">Kotlin</span>
-	<span class="chip bg-color-gray black">Rust</span>
-	<span class="chip bg-color-gray black">Ruby</span>
-	<span class="chip bg-color-green black">Unity</span>
-	<span class="chip bg-color-green black">Android Studio</span>
-	<span class="chip bg-color-green black">QT</span>
+			.navbar .navhide{
+				float:right;
+			}
+			
+			a{
+				color:white;
+				text-decoration:none;
+			}
+			
+			.div-title {
+				background-color:#333;
+			}
+			
+			.div-title h1{
+				color:white;
+				font-size:32px;
+				padding:12px 8px;
+				margin-left:20px;
+			}
+			
+			.div-content{
+				margin:16px 32px;
+			}
+			
+			.div-content-left{
+				width:50%;
+				font-size:18px;
+			}
+			
+			.home {
+				display:flex;
+				align-items:center;
+				padding:20px 10px;
+				height:100vh;
+				color: #30c5c5;
+				font-family: 'Roboto Mono', monospace;
+				font-size:25px;
+			}
+			
+			.home .title{
+				margin-bottom:0;
+				max-width:600px;
+			}
+			
+			.home-left{
+				width:40%;
 				
-	<p>Currently a poor 3rd Year student. insert interesting details.....</p>
-	<p>Hallu ange, jagpol, bilom, sandog, meowmeow</p>
-    <p>Im gonna try react.js</p>
+			}
+			.home-left p{
+				margin:0;
+				font-size:15px;
+			}
+			.home-right{
+				width:60%;
+				font-size:48px;
+				text-align:center;
+			}
+			
+			dd{
+				border:1px solid white;
+			}
+			
+			.showcase{
+				background-image: linear-gradient(to right, #00000000, #111111aa ,#111111dd), url(img1.png);
+				background-position:contain;
+				background-repeat:no-repeat;
+				margin:16px auto;
+				width:80vw;
+				max-height:100vh;
+				height:80vh;
+				border-radius:30px;
+			}
+			
+			.showcase-details{
+				color:white;
+				margin-right:0;
+				margin-left:auto;
+				text-align:right;
+				width:50%;
+				height:100%;
+				padding:50px;
+				box-sizing:border-box;
+			}
+			
+			.showcase-image{
+				background:url(img1.png)
+				background-size:cover;
+			}
+			
+			.button-large{
+				background-color: #44AA44;
+				border:none;
+				border-radius:30px;
+				color: white;
+				cursor: pointer;
+				font-size: 18px;
+				padding: 16px 32px;
+				text-align: center;
+				text-decoration: none;
+				
+			}
+			
+			.slideshow{
+				width:100%;
+				height:80vh;
+
+			}
+
+			.slides{
+				display:none;
+				width:100%;
+				height:100%;
+			}
+
+			.slideSeek{
+				cursor:pointer;
+				border:1px solid white;
+				border-radius:100%;
+			}
+			
+			.btn-arw{
+				border:1px solid white;
+				display:inline;
+				padding:10px 15px;
+				width:10px;
+				text-align:center;
+				cursor:pointer;
+				transition:.3s;
+				user-select:none;
+			}
+			.btn-arw:hover{background-color:white;color: #30c5c5;}
+			
+			footer{
+				background-color:#222;
+			}
+			
+			footer .div-title{
+				margin-bottom:0px;
+			}
+			
+			@media screen and (max-width: 600px) {
+				.navbar .hidden{
+					display:inline;
+				}
+				.navbar .navhide{
+					display:none;
+				}
+				.nav-dropdown-btn a{
+					display:inline;
+				}
+				.div-banner {
+					font-size:20px;
+				}
+				.div-section p{
+					font-size:13px;
+				}
+				.headcon{
+					font-size:16px;
+				}
+			}
+			
+			@media only screen and (min-width: 768px) {}
+			@media only screen and (min-width: 992px) {}
+			@media only screen and (min-width: 1200px) {}
+			@media only screen and (orientation: landscape) {}
+			
+			/*Quick classes*/
+			.border{border:1px solid green;}
+			.clear{clear:both;}
+			.float-left{float:left !important;}
+			.float-right{float:right !important;}
+			.marg-bot-30{margin-bottom:30px;}
+			.marg-auto{margin:auto;}
+			.width-auto{width:auto;}
+			.width-100{width:100%;}
+			.width-50{width:50%;}
+			.width-25{width:25%;}
+			.width-10{width:10%;}
+			.center2{display:table;margin:0 auto;}
+			.centert{text-align:center;}
+			.center{display:flex;align-items:center;justify-content:center;}
+
+			/*Absolute Positioning*/
+			.absl{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);}
+			.abslt{position:absolute;top:0%;left:0%;}
+			.abslb{position:absolute;bottom:0%;left:0%;}
+			.absr{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);}
+			.absrt{position:absolute;top:0%;right:0%;}
+			.absrb{position:absolute;bottom:0%;right:0%;}
+			.absm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+			.absmt{position:absolute;top:0%;left:50%;transform:translate(-50%,0%);}
+			.absmb{position:absolute;bottom:0%;left:50%;transform:translate(-50%,0%);}
+
+			/*object fit tells how an image or video will fit;define size to see effect*/
+			.fit-fill {object-fit:fill;}
+			.fit-contain {object-fit:contain;}
+			.fit-cover {object-fit:cover;}
+			.fit-scale-down {object-fit:scale-down;}
+			.fit-none {object-fit:none;}
+
+			/*Columns*/
+			.col.s1{width:8%}
+			.col.s2{width:16%}
+			.col.s3{width:24%}
+
+
+			/*QuickSave Colors*/
+			.skyblue{color:#de4e4e;}
+			.red1{background-color:#C53030;}
+			.red{color:#de4e4e;}
+			.orange{color:#ff9a00}
+			.yellow{color:#fdff00}
+			.green{color:#22ff00}
+			.blue{color:#0000ff}
+			.purple{color:#ad00ff}
+			.white{color:#fff}
+			.black{color:#000}
+			.gray{color:#777}
+			.bg-color-red{background-color:#de4e4e}
+			.bg-color-orange{background-color:#ff9a00}
+			.bg-color-yellow{background-color:#fdff00}
+			.bg-color-green{background-color:#22ff00}
+			.bg-color-blue{background-color:#0000ff}
+			.bg-color-purple{background-color:#ad00ff}
+			.bg-color-white{background-color:#fff}
+			.bg-color-black{background-color:#000}
+			.bg-color-gray{background-color:#777}
+			
+		.contain{
+				display:flex;
+				width:100%;
+				justify-content:center;
+				flex-wrap:wrap;
+				list-style-type:none;
+				margin:0;
+				padding:0px;
+			}
+			.item{
+				display:flex;
+				height:100px;
+				width:600px;
+				color:white;
+				padding:0px;
+			}
+			.icon{
+				width:100px;
+				padding:0px;
+				margin:0px;
+			}
+			.detail{
+				
+			}
+			.title{
+				display:flex;
+				align-items:flex-end;
+				justify-content:left;
+				width:400px;
+				height:30%;
+				
+			}
+			.bar-contain{
+				padding:20px 0;
+			}
+			.bar{
+				display:block;
+				background-color:#888;
+				width:400px;
+				height:70%;
+				border-radius:40px;
+			}
+
+			.value{
+				display:flex;
+				justify-content:right;
+				align-items:center;
+				background-color:blue;
+				height:100%;
+				padding:0px;
+				border-radius:40px;
+			}
+			.value20{
+				width:20%;}
+			.value40{
+				width:40%;}
+			.value60{
+				width:60%;}
+			.value80{
+				width:80%;}
+			.value100{
+				width:100%;}
+				
+			.img1{
+				background-image:url(blender.png);
+				background-size:80% 80%;
+				background-repeat:no-repeat;
+				background-position:center;
+			}
+			.img2{
+				background-image:url(unity.png);
+				background-size:80% 80%;
+				background-repeat:no-repeat;
+				background-position:center;
+			}
+			.img3{
+				background-image:url(csharp.png);
+				background-size:80% 80%;
+				background-repeat:no-repeat;
+				background-position:center;
+			}
+			.img4{
+				background-image:url(gimp.svg);
+				background-size:80% 80%;
+				background-repeat:no-repeat;
+				background-position:center;
+			}
+			.img5{
+				background-image:url(vs.svg);
+				background-size:80% 80%;
+				background-repeat:no-repeat;
+				background-position:center;
+			}
+		</style>
+		
+	</head>
 	
-</div>
-<div class="div-content">
-	<div class="headcon"><h1>Work</h1></div>
-	<div class="slideshow" style="position:relative;">
-		<div class="slides absm">slide 1</div>
-		<div class="card slides absm">
-			<a href="https://Meowmeowzers.github.io/React.js-Test">React.js Attempt</a>
+	<body>
+	
+		<ul class="navbar">
+			<li class="navicon"><a href="#">HOME</a></li>
+			<li class="navhide"><a href="#">CONTACT</a></li>
+			<li class="navhide"><a href="#">WORK</a></li>
+			<li class="navhide"><a href="#">ABOUT</a></li>
+			<li class="hidden"><a href="#">V</a></li>
+		</ul>
+		
+		<div class="home">
+			<div class="home-left">
+				<h1 class="title">Leonardo Laureta</h1>
+				<hr>
+				<p class="subtitle white">Newb Programmer/Software Developer</p>
+			</div>
+			<div class="home-right white">
+				<h1>PORTFOLIO</h1>
+			</div>
 		</div>
-		<div class="card slides absm">slide 3</div>
-		<img class="slides fit-contain" src=".\assets\Screenshot1.png" style="">
-		<img class="slides fit-cover" src=".\assets\Screenshot2.png" style="">
-		<img class="slides fit-fill" src=".\assets\Screenshot3.png" style="">
-		<div class="btn-arw absl" onclick="nxtSlide(-1)">&#10094;</div>
-		<div class="btn-arw absr" onclick="nxtSlide(1)">&#10095;</div>
-		<div class="btn-arw absm" >m</div>
-		<div class="btn-arw absmb">mb</div>
-		<div class="btn-arw absmt" >mt</div>
-		<div class="btn-arw abslt" >lt</div>
-		<div class="btn-arw abslb" >lb</div>
-		<div class="btn-arw absrt" >rt</div>
-		<div class="btn-arw absrb" >rb</div>
-	</div>
-	<div class="centert">
-		<span class="slideSeek" onclick="nowSlide(1)">1</span>
-		<span class="slideSeek" onclick="nowSlide(2)">2</span>
-		<span class="slideSeek" onclick="nowSlide(3)">3</span>
-		<span class="slideSeek" onclick="nowSlide(4)">4</span>
-		<span class="slideSeek" onclick="nowSlide(5)">5</span>
-		<span class="slideSeek" onclick="nowSlide(6)">6</span>
-	</div>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-	<p>.....</p>
-	<p>.....</p>
-	<p>.....</p>
-	<p>.....</p>
-</div>
+		
+		<div class="div-section">
+			<div class="div-title"><h1>About</h1></div>
+			<div class="div-content">
+				<div class="div-content-left">
+					<p>Meet Leo, a fourth-year student who aspires to be a programmer or software developer. Despite his passion for technology and coding, Leo is currently struggling with motivation. The stress of being a poor student and uncertainty about his future is taking a toll on him. He doesn't know what his future holds and often feels lost, not knowing which path to take. Nevertheless, Leo remains determined to pursue his dream and overcome the challenges he faces.</p>
+					<p>Hallu Ange, Jagpol, Bilom, Sandog, Meowmeow, Rem, </p>
+				</div>		
+			</div>
+			</div>			
+		</div>
+		
+		<div class="div-section">
+			<div class="div-title"><h1>Technical Skills</h1></div>				
+				<div>
+					<ul class="contain">
+						<li class="item">
+							<div class="icon img1"></div>
+							<div class="detail">
+								<div class="title">C++</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img2"></div>
+							<div class="detail">
+								<div class="title">C#</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img3"></div>
+							<div class="detail">
+								<div class="title">Java</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img4"></div>
+							<div class="detail">
+								<div class="title">Kotlin</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img5"></div>
+							<div class="detail">
+								<div class="title">Python</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img5"></div>
+							<div class="detail">
+								<div class="title">Python</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img5"></div>
+							<div class="detail">
+								<div class="title">Python</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img5"></div>
+							<div class="detail">
+								<div class="title">Python</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="icon img5"></div>
+							<div class="detail">
+								<div class="title">Python</div>
+								<div class="bar-contain">
+									<div class="bar">
+										<div class="value value80">1</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+				<!--dl>
+				<dt>Programming Languages</dt>
+				<dd>C++</dd>
+				<dd>C#</dd>
+				<dd>Java</dd>
+				<dd>Python</dd>
+				<dd>Kotlin</dd>
+				<dt>Web Development</dt>
+				<dd>HTML</dd>
+				<dd>CSS</dd>
+				<dd>JS</dd>
+				<dt>Android App Development</dt>
+				<dd>Android Studio, Kotlin</dd>
+				<dt>Game Development</dt>
+				<dd>Unity, C#</dd>
+				</dl-->
+				
+				<!--
+				<span class="chip bg-color-red gray">Test 1</span>
+				<span class="chip bg-color-orange white">Test 2</span>
+				<span class="chip bg-color-yellow blue">Test 3</span>
+				-->
+			
+		</div>
+		
+		<div class="div-section">
+			<div class="div-title"><h1>Work</h1></div>
+			<div class="slideshow" style="position:relative;">
+				<div class="slides absm">slide 1</div>
+				<div class="card slides absm">
+					<a href="https://Meowmeowzers.github.io/React.js-Test">React.js Attempt</a>
+				</div>
+				<div class="card slides absm">slide 3</div>
+				<img class="slides fit-contain" src=".\assets\Screenshot1.png" style="">
+				<img class="slides fit-cover" src=".\assets\Screenshot2.png" style="">
+				<img class="slides fit-fill" src=".\assets\Screenshot3.png" style="">
+				<div class="btn-arw absl" onclick="nxtSlide(-1)">&#10094;</div>
+				<div class="btn-arw absr" onclick="nxtSlide(1)">&#10095;</div>
+			</div>
+			<div class="centert">
+				<span class="slideSeek" onclick="setSlide(1)"> 1 </span>
+				<span class="slideSeek" onclick="setSlide(2)"> 2 </span>
+				<span class="slideSeek" onclick="setSlide(3)"> 3 </span>
+				<span class="slideSeek" onclick="setSlide(4)"> 4 </span>
+				<span class="slideSeek" onclick="setSlide(5)"> 5 </span>
+				<span class="slideSeek" onclick="setSlide(6)"> 6 </span>
+			</div>
+		</div>
+		
+		<div class="div-section">
+			<div class="div-title"><h1>Game Development</h1></div>
+			<div class="showcase">
+				<!--img class="showcase-image" src="img1.png"-->
+				
+				<div class="showcase-details">
+					<h2>NINJA VILLAGE</h2>
+					<p>A top-down adventure game. Collect the scrolls and defeat the final boss.</p>
+					<p>Made with Unity</p>
+					<p>100% Human made with the help of Youtube tutorials</p>
+					<p>Uses Ninja Village asset pack by Pixel Boy.</p>
+					<a href="https://meowmeowzers.github.io/short-topdown-adventure-game-1/" target="_blank"><button class="button-large">Play</button></a>
+					
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="div-section">
+			<div class="div-title"><h1>Insert Work</h1></div>
+			<div class="showcase">
+				<!--img class="showcase-image" src="img1.png"-->
+				
+				<div class="showcase-details">
+					<h2>Insert Title</h2>
+					<p>Insert Description.</p>
+					<p>Insert Detail</p>
+					</div>
+			
+			</div>
+		</div>
 
-<div class="div-content">
-	<div class="headcon"><h1>Logs</h1></div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	<p>2022 Mar Apr - Too busy to work on this, i already forgot the structure(?) and some keywords, I also broke some pages,
-	object fit, code "stealing", self study on unity android studio software engineering,fuccin modules, i set unrealistic goals which lead to burnout, quickly losed a 
-	lot of my motivation, passion, gained knowledge, mental strength till this day of writing....</p>
-	<p>Attempting to try studying React.js</p>
-	<p>.....</p>
-	<p>.....</p>
-</div>
-<div class="div-content marg-bot-30">
-	<div class="headcon"><h1>Changes</h1></div>
-	<p>2021 Nov - Created Github/Webpage</p>
-    <p>2022 Feb - Started Working on it during free time</p>
-    <p>2022 Apr - Prototype slideshow css js, broke some stuff</p>
-    <p>2022 Apr - "Chips", slideshow buttons, css absolute</p>
-    <p>2022 Apr - Seeker, Renamed some elements</p>
-</div>
-<footer class="div-content">
-<div class="headcon"><h1>Contact</h1></div>
-</footer>
-</body>
+		<footer>
+			<div class="div-title"><h1>Contact</h1></div>
+			<div class="div-content">
+				<p>PH</p>
+				<p>Github</p>
+				<p>Facebook</p>
+				<p>+639121231234</p>
+			</div>
+		</footer>
+	</body>
+	
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
+				document.querySelector(".navbar").style.backgroundColor = "#222";
+				document.querySelector(".navbar").style.borderBottom = "1px solid #444"
+				document.querySelector(".navbar").style.opacity = ".95";
+			} else {
+				document.querySelector(".navbar").style.backgroundColor = "";
+				document.querySelector(".navbar").style.borderBottom = "";
+				document.querySelector(".navbar").style.opacity= "";
+			}
+		}
+		
+		//slide show
+		var slideIndex = 1;
+		showSlide(slideIndex);
 
-<script>
-//navbar scroll script
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
-    document.getElementById("nav").style.backgroundColor = "#222222";
-	document.getElementById("nav").style.borderBottom = "1px solid #444";
-	document.getElementById("nav").style.opacity= ".95";
-  } else {
-    document.getElementById("nav").style.backgroundColor = "";
-	document.getElementById("nav").style.borderBottom = "";
-	document.getElementById("nav").style.opacity= "";
-  }
-}
+		function nxtSlide(n) {
+		  showSlide(slideIndex += n);
+		}
 
-//slide show
-var slideIndex = 1;
-showSlide(slideIndex);
+		function setSlide(n) {
+		  showSlide(slideIndex = n);
+		}
 
-function nxtSlide(n) {
-  showSlide(slideIndex += n);
-}
-
-function nowSlide(n) {
-  showSlide(slideIndex = n);
-}
-
-function showSlide(n) {
-	var i;//index array
-	var x = document.getElementsByClassName("slides");//set var x as array of slides classes
-	var seek = document.getElementsByClassName("slideSeek");//set var dots as array of slideSeek classes
-	if (n > x.length) {slideIndex = 1}//if index is more than length of array, go back to 1
-	if (n < 1) {slideIndex = x.length}//if index is less than 1, set index to max length of array
-	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}  //set all slides to display none
-	for (i = 0; i < seek.length; i++) {
-	seek[i].className = seek[i].className.replace(" bg-color-white", "");//remove background color from unselected seeker
-	}
-	x[slideIndex-1].style.display = "block";//show current slide/index
-	seek[slideIndex-1].className += " bg-color-white";//add background color to current seeker
-}
-//slideshow
-</script>
+		function showSlide(n) {
+			let i;//index array
+			let x = document.getElementsByClassName("slides");//set var x as array of slides classes
+			let seek = document.getElementsByClassName("slideSeek");//set var dots as array of slideSeek classes
+			if (n > x.length) {slideIndex = 1}//if index is more than length of array, go back to 1
+			if (n < 1) {slideIndex = x.length}//if index is less than 1, set index to max length of array
+			for (i = 0; i < x.length; i++) {x[i].style.display = "none";}  //set all slides to display none
+			for (i = 0; i < seek.length; i++) {
+			seek[i].className = seek[i].className.replace(" bg-color-white", "");//remove background color from unselected seeker
+			}
+			x[slideIndex-1].style.display = "block";//show current slide/index
+			seek[slideIndex-1].className += " bg-color-white";//add background color to current seeker
+		}
+		//slideshow
+	</script>
 </html>
