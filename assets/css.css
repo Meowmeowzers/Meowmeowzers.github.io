@@ -97,6 +97,8 @@ body{
 
 .slideSeek{
 	cursor:pointer;
+	border:1px solid white;
+	border-radius:100%;
 }
 
 .card{
@@ -162,6 +164,7 @@ body{
 .width-10{width:10%;}
 .center2{display:table;margin:0 auto;}
 .centert{text-align:center;}
+.center{display:flex;align-items:center;justify-content:center;}
 
 /*Absolute Positioning*/
 .absl{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);}

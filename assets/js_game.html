@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
-<script>
-console.log("Hello World");
+	<script>
+	console.log("Hello World");
 
-function startGame() {
-  myGameArea.start();
-}
+	function startGame() {
+	  myGameArea.start();
+	}
 
-var myGameArea = {
-  canvas : document.createElement("canvas"),
-  start : function() {
-    this.canvas.width = 480;
-    this.canvas.height = 270;
-    this.context = this.canvas.getContext("2d");
-    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-  }
-}
-</script>
-
-<body>
-ge
-<canvas>
-</canvas>
-</body>
+	var myGameArea = {
+	  canvas : document.createElement("canvas"),
+	  start : function() {
+		this.canvas.width = 480;
+		this.canvas.height = 270;
+		this.context = this.canvas.getContext("2d");
+		document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+	  }
+	}
+	</script>
+	<body>
+		<canvas>
+		</canvas>
+	</body>
 </html>
