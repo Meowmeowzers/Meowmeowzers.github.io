@@ -2,87 +2,154 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 */
-body{
+
+body {
+	background-color:#222;
+	color:white;
+	margin:0;
+	padding:0;
+	min-height:2000px;
 	font-family: 'Roboto', sans-serif;
-	background-color:black;
-	margin:0;
-	padding:0;
-	overflow-x:hidden;
-}
-
-.nav{
-	font-size: 15px;
-	letter-spacing: 5px;
-	padding:20px;
-	margin: 0px;
-	overflow: hidden;
-	width:100%;
 	box-sizing:border-box;
-	position:fixed;
-	transition:0.3s;
-	z-index:10;
 }
 
-.nav ul{
-	margin:0;
+.navbar{
+	width:100%;
 	padding:0;
-}
-.nav li{
-	list-style-type:none;
-	text-decoration:none;
-	display:inline;
+	margin:0;
+	position:fixed;
 }
 
-.nav a,a:link,a:visited {
-	padding:20px;
-	color:#ffffff;
-	text-decoration:none;
-	transition:.3s;
+.navbar li {
+	display:inline;
+	font-size:20px;
+	padding:20px 20px;
 }
-.nav a:hover {
+
+.navbar li a:hover{
 	color: #30c5c5;
 }
-.nav-dropdown-btn a{
+
+.navbar .navicon{
+	float:left;
+	display:inline;
+	padding:20px 20px;
+}
+
+.navbar .hidden{
 	display:none;
 	float:right;
 }
-.div-banner {
+
+.navbar .navhide{
+	float:right;
+}
+
+a{
+	color:white;
+	text-decoration:none;
+}
+
+.div-title {
+	background-color:#333;
+}
+
+.div-title h1{
+	color:white;
+	font-size:32px;
+	padding:12px 8px;
+	margin-left:20px;
+}
+
+.div-content{
+	margin:16px 32px;
+	padding-top:16px;
+}
+
+.div-content-left{
+	padding:18px;
+	background-color:#334;
+	width:40%;
+	font-size:18px;
+	text-align:justify;
+	text-indent:50px;
+	line-height:1.5;
+}
+
+.div-section{
+	padding-top:45px;
+}
+
+.home {
+	display:flex;
+	align-items:center;
 	padding:20px 10px;
-	height:95vh;
-	background-color:#222222;
+	height:100vh;
 	color: #30c5c5;
 	font-family: 'Roboto Mono', monospace;
 	font-size:25px;
-	margin-bottom:30px;
-	box-sizing:border-box;
 }
 
-.div-banner h1{
-	padding-top:30vh;
-	width:70%;
+.home .title{
+	margin-bottom:0;
+	max-width:600px;
 }
 
-.div-content {
-	/*min-height:400px;*/
-	background-color:#222222;
+.home-left{
+	width:40%;
+	
+}
+.home-left p{
+	margin:0;
+	font-size:15px;
+}
+.home-right{
+	width:60%;
+	font-size:48px;
+	text-align:center;
+}
+
+.showcase{
+	display:flex;
+	background-image: linear-gradient(to right, #00000000, #111111aa ,#111111dd), url(img1.png);
+	background-position:contain;
+	background-repeat:no-repeat;
+	margin:16px auto;
+	width:80vw;
+	max-height:150vh;
+	height:80vh;
+	border-radius:30px;
+}
+
+.showcase-details{
 	color:white;
-	margin-bottom:30px;
+	margin-right:0;
+	margin-left:auto;
+	text-align:right;
+	width:50%;
+	height:100%;
+	padding:50px;
 	box-sizing:border-box;
-}
-.div-content p, dl{
-	margin:20px;
 }
 
-.headcon {
-	color: #30c5c5;
-	font-family: 'Roboto Mono', monospace;
-	box-sizing:border-box;
+.showcase-image{
+	background:url(img1.png)
+	background-size:cover;
 }
-.headcon h1 {
-	border-bottom:1px solid white;
-	padding:10px;
-	margin:20px;
+
+.button-large{
+	background-color: #44AA44;
+	border:none;
+	border-radius:30px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	
 }
+
 .slideshow{
 	width:100%;
 	height:80vh;
@@ -101,19 +168,6 @@ body{
 	border-radius:100%;
 }
 
-.card{
-	width:50%;
-	height:60px;
-	padding:20px;
-	
-	background-color:green;
-}
-
-.chip{
-	border-radius:25px;
-	padding:5px;
-	user-select:none;
-}
 .btn-arw{
 	border:1px solid white;
 	display:inline;
@@ -124,31 +178,172 @@ body{
 	transition:.3s;
 	user-select:none;
 }
+
 .btn-arw:hover{background-color:white;color: #30c5c5;}
 
-/**********/
-/*Media Queries for screen size*/
-@media screen and (max-width: 600px) {
-	.nav-hide a{
-		display:none;
-	}
-	.nav-dropdown-btn a{
+
+.skills-container{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	flex-wrap:wrap;
+	list-style-type:none;
+	margin:0;
+	padding:0px;
+}
+.skill-item{
+	display:flex;
+	height:100px;
+	width:500px;
+	color:white;
+	padding:0px;
+}
+.skill-icon{
+	width:100px;
+	padding:0px;
+	margin:0px;
+}
+.skill-details{
+	
+}
+
+.skill-title{
+	display:flex;
+	align-items:flex-end;
+	justify-content:left;
+	font-size:18px;
+	width:400px;
+	height:30%;			
+}
+
+.skill-bar-container{
+	padding:20px 0;
+}
+
+.skill-bar{
+	background-color:#888;
+	width:400px;
+	border-radius:10px;
+}
+
+.skill-bar-value{
+	height:22px;
+	display:flex;
+	align-items:center;
+	border-radius:10px;
+	padding-left:10px;
+}
+
+footer{
+	background-color:#222;
+}
+
+footer .div-title{
+	margin-bottom:0px;
+}
+
+@media screen and (max-width: 720px) {
+	.navbar .hidden{
 		display:inline;
 	}
-	.div-banner {
-		font-size:20px;
+	.navbar .navhide{
+		display:none;
 	}
-	.div-content p{
-		font-size:13px;
+	.navbar>li {
+		font-size:30px;
+		padding:8px 8px;
 	}
-	.headcon{
-		font-size:16px;
+	.navbar .navicon{
+		padding:8px 8px;
 	}
-@media only screen and (min-width: 600px) {}
+	.div-section p{
+		font-size:16x;
+	}
+		
+	.home {
+		flex-wrap:wrap;
+		padding:0px 10px;
+		height:95vh;
+		font-size:25px;
+	}
+	.home-left{
+		align-self:flex-end;
+		width:99%;
+	}
+	.home-left > .title{
+		font-size:56px;
+	}
+	.home-left p{
+		font-size:18px;
+	}
+	.home-right{
+		align-self:flex-start;
+		width:99%;
+		font-size:48px;
+	}
+	.div-content-left{
+		padding:18px;
+		width:95%;
+		font-size:28px;
+		text-indent:50px;
+		line-height:1.5;
+	}
+	.div-title h1{
+		font-size:42px;
+		padding:8px 4px;
+		margin-left:10px;
+	}
+	.skill-item{
+		height:200px;
+		width:99%;
+	}
+	
+	.skill-icon{
+		align-self:center;
+		width:20%;
+		height:60%;	
+	}
+	.skill-title{
+		font-size:32px;
+		width:500px;
+		height:30%;			
+	}
+	.skill-bar-container{
+		padding:20px 0;
+	}
+	.skill-bar{
+		width:500px;
+		border-radius:10px;
+		height:32px;
+	}
+	.skill-bar-value{
+		height:32px;
+		display:flex;
+		align-items:center;
+		border-radius:10px;
+		padding-left:10px;
+	}
+	
+	.showcase{
+		background-image: linear-gradient(to bottom, #00000000, #11111144, #111111aa ,#111111ff), url(img1.png);
+		margin:16px auto;
+		width:99vw;
+		max-height:150vh;
+		height:70vh;
+	}
+	.showcase-details{
+		align-self:flex-end;
+		text-align:right;
+		width:100%;
+		height:40%;
+		padding:20px;
+	}
+}
+
 @media only screen and (min-width: 768px) {}
 @media only screen and (min-width: 992px) {}
 @media only screen and (min-width: 1200px) {}
-}
+@media only screen and (orientation: landscape) {}
 
 /*Quick classes*/
 .border{border:1px solid green;}
@@ -159,7 +354,11 @@ body{
 .marg-auto{margin:auto;}
 .width-auto{width:auto;}
 .width-100{width:100%;}
+.width-80{width:80%;}
+.width-75{width:75%;}
+.width-60{width:60%;}
 .width-50{width:50%;}
+.width-40{width:40%;}
 .width-25{width:25%;}
 .width-10{width:10%;}
 .center2{display:table;margin:0 auto;}
@@ -205,11 +404,67 @@ body{
 .bg-color-red{background-color:#de4e4e}
 .bg-color-orange{background-color:#ff9a00}
 .bg-color-yellow{background-color:#fdff00}
-.bg-color-green{background-color:#22ff00}
+.bg-color-green{background-color:#00c371}
 .bg-color-blue{background-color:#0000ff}
+.bg-color-lightblue{background-color:#4444aa}
 .bg-color-purple{background-color:#ad00ff}
 .bg-color-white{background-color:#fff}
 .bg-color-black{background-color:#000}
 .bg-color-gray{background-color:#777}
 
+
+.icon-cpp{
+	background-image:url(cpp.svg);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-cs{
+	background-image:url(csharp.png);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-java{
+	background-image:url(java.svg);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-kt{
+	background-image:url(kotlin.svg);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-py{
+	background-image:url(python.svg);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-htmlcss{
+	background-image:url(htmlcss.png);
+	background-size:80% 60%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-js{
+	background-image:url(javascript.png);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-android{
+	background-image:url(android-os.svg);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-unity{
+	background-image:url(unity.png);
+	background-size:80% 80%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
 
