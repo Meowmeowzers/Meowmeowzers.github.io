@@ -32,7 +32,7 @@
 		</div>
 		
 		<div class="div-section" id="about">
-			<div class="div-title"><h1>About</h1></div>
+			<div class="div-title"><h1>ABOUT</h1></div>
 			<div class="div-content">
 				<div class="div-content-left">
 					<p>Meet Leo, a fourth-year student who aspires to be a programmer or software developer. Despite his passion for technology and coding, Leo is currently struggling with motivation. The stress of being a poor student and uncertainty about his future is taking a toll on him. He doesn't know what his future holds and often feels lost, not knowing which path to take. Nevertheless, Leo remains determined to pursue his dream and overcome the challenges he faces.</p>
@@ -43,7 +43,7 @@
 		</div>
 		
 		<div class="div-section" id="skills">
-			<div class="div-title"><h1>Technical Skills</h1></div>				
+			<div class="div-title"><h1>TECHNICAL SKILLS</h1></div>				
 				<div>
 					<ul class="skills-container">
 						<li class="skill-item">
@@ -102,9 +102,20 @@
 							</div>
 						</li>
 						<li class="skill-item">
-							<div class="skill-icon icon-htmlcss"></div>
+							<div class="skill-icon icon-html"></div>
 							<div class="skill-details">
-								<div class="skill-title">HTML, CSS</div>
+								<div class="skill-title">HTML</div>
+								<div class="skill-bar-container">
+									<div class="skill-bar">
+										<div class="skill-bar-value width-75 bg-color-orange"><p>Advance</p></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="skill-item">
+							<div class="skill-icon icon-css"></div>
+							<div class="skill-details">
+								<div class="skill-title">CSS</div>
 								<div class="skill-bar-container">
 									<div class="skill-bar">
 										<div class="skill-bar-value width-75 bg-color-orange"><p>Advance</p></div>
@@ -157,7 +168,21 @@
 		</div>
 		
 		<div class="div-section" id="work">
-			<div class="div-title"><h1>Work</h1></div>
+			<div class="div-title"><h1>PROJECTS</h1></div>
+			
+			
+			<div class="showcase">
+				<div class="showcase-details">
+					<div><h2>NINJA VILLAGE</h2></div>
+					<div>
+					<p>A top-down adventure game. Collect the scrolls and defeat the final boss.</p>
+					<p>Made with Unity. 100% Human made with the help of Youtube tutorials. Uses Ninja Village asset pack by Pixel Boy.</p>
+					<a href="https://meowmeowzers.github.io/short-topdown-adventure-game-1/" target="_blank"><button class="showcase-button">Play</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="btn-arw" onclick="nxtSlide(-1)">&#10094;</div>
+			<div class="btn-arw" onclick="nxtSlide(1)">&#10095;</div>
 			<!--div class="slideshow" style="position:relative;">
 				<div class="slides absm">slide 1</div>
 				<div class="card slides absm">
@@ -178,31 +203,27 @@
 				<span class="slideSeek" onclick="setSlide(5)"> 5 </span>
 				<span class="slideSeek" onclick="setSlide(6)"> 6 </span>
 			</div>
-		</div-->
-		
-			<div class="showcase">				
-				<div class="showcase-details">
-					<div><h2>NINJA VILLAGE</h2></div>
-					<div>
-					<p>A top-down adventure game. Collect the scrolls and defeat the final boss.</p>
-					<p>Made with Unity. 100% Human made with the help of Youtube tutorials. Uses Ninja Village asset pack by Pixel Boy.</p>
-					<a href="https://meowmeowzers.github.io/short-topdown-adventure-game-1/" target="_blank"><button class="showcase-button">Play</button></a>
-					</div>
-				</div>
-			</div>
-			
+			</div-->
 		</div>
 
 		<footer id="footer">
-			<div class="div-title"><h1>Contact</h1></div>
-			<div class="div-content">
-				<p>PH</p>
-				<p>Github</p>
-				<p>Facebook</p>
-				<p>+639121231234</p>
-				<p>icons8 and pngegg</p>
-				<p>&copy 2023 Meowmeowzers</p>
-			</div>
+				<div class="footer-title">
+					<h1 style="">CONTACT</h1>
+				</div>
+				
+				<div class="footer-content">
+					<a href="https://devicon.dev/" target="_blank" class="float-right"><div class="icon-small icon-devicon"></div></a>
+					<a href="https://facebook.com" target="_blank" class="float-left"><div class="icon-small icon-fb"></div></a>
+					<a href="https://github.com/meowmeowzers" target="_blank" class="float-left"><div class="icon-small icon-github"></div></a>
+				</div>
+				
+				<div class="footer-copy">
+					<hr>
+					<i class="">------- &copy 2023 Meowmeowzers <a href="https://flagicons.lipis.dev/" target="_blank" class="icon-flag"></a> -------</i>
+				</div>
+		
+		
+			
 		</footer>
 		
 	</body>

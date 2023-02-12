@@ -51,20 +51,24 @@ a{
 	text-decoration:none;
 }
 
+.div-section{
+	padding-top:32px;
+}
+
 .div-title {
 	background-color:#333;
 }
 
-.div-title h1{
+.div-title > h1{
 	color:white;
 	font-size:32px;
-	padding:12px 8px;
-	margin-left:20px;
+	padding:12px 24px;
 }
 
 .div-content{
-	margin:16px 16px;
 	padding-top:16px;
+	padding-left:16px;
+	padding-right:16px;
 }
 
 .div-content-left{
@@ -77,9 +81,7 @@ a{
 	line-height:1.5;
 }
 
-.div-section{
-	padding-top:45px;
-}
+
 
 .home {
 	display:flex;
@@ -139,7 +141,7 @@ a{
 }
 
 .showcase-button{
-	background-color: #44AA44;
+	background-color: #2a2;
 	border:none;
 	border-radius:30px;
 	color: white;
@@ -148,13 +150,14 @@ a{
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
-	
+}
+.showcase-button:hover{
+	background-color:#4a4;	
 }
 
 .slideshow{
 	width:100%;
 	height:80vh;
-
 }
 
 .slides{
@@ -177,7 +180,6 @@ a{
 	text-align:center;
 	cursor:pointer;
 	transition:.3s;
-	user-select:none;
 }
 
 .btn-arw:hover{background-color:white;color: #30c5c5;}
@@ -237,64 +239,131 @@ a{
 }
 
 footer{
-	background-color:#222;
+	display:grid;
+	margin-top:10px;
+	padding-bottom:0;
+}
+footer>div{
+	grid-column:1 / 2;
+}
+.footer-title{
+	height:40px;
+	display:flex;
+	align-items:center;
+	background-color:#333;
+	padding:8px 24px;
+}
+.footer-content{
+	padding-top:100px;
+}
+.footer-copy{
+	text-align:center;
+}
+.footer-icon{
+	display:inline;
+	
 }
 
-footer .div-title{
-	margin-bottom:0px;
+.icon-flag{
+	display:inline;
+	padding:13px;
+	height:1px;
+	width:0px;
+	background-image:url(https://flagicons.lipis.dev/flags/4x3/ph.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-small{
+	width:50px;
+	height:50px;
+	padding:0px;
+	margin:0px;
 }
 
 .icon-cpp{
-	background-image:url(cpp.svg);
-	background-size:90% 90%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-cs{
-	background-image:url(csharp.png);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-java{
-	background-image:url(java.svg);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-kt{
-	background-image:url(kotlin.svg);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg);
+	background-size:70% 70%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-py{
-	background-image:url(python.svg);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
-.icon-htmlcss{
-	background-image:url(htmlcss.png);
-	background-size:80% 60%;
+.icon-html{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-css{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-js{
-	background-image:url(javascript.png);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-android{
-	background-image:url(android-os.svg);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-unity{
-	background-image:url(unity.png);
-	background-size:80% 80%;
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg);
+	filter:invert(100%);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-devicon{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-fb{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-github{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+	filter:invert(100%);
+}
+.icon-ph{
+	background-image:url(https://flagicons.lipis.dev/flags/4x3/ph.svg);
+	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
@@ -308,16 +377,34 @@ footer .div-title{
 		display:none;
 	}
 	.navbar>li {
-		font-size:30px;
+		font-size:24px;
 		padding:12px 12px;
 	}
 	.navbar .navicon{
 		padding:12px 12px;
 	}
+	
+	.div-content{
+		padding-top:8px;
+		padding-left:4px;
+		padding-right:4px;		
+	}
+	.div-content-left{
+		padding:15px;
+		width:95%;
+		font-size:16px;
+		text-indent:40px;
+		line-height:1.2;
+	}
+	.div-title h1{
+		font-size:42px;
+		padding:8px 4px;
+		margin-left:10px;
+	}
 	.div-section p{
 		font-size:16x;
 	}
-		
+
 	.home {
 		flex-wrap:wrap;
 		justify-content:center;
@@ -340,27 +427,11 @@ footer .div-title{
 		width:90%;
 		font-size:28px;
 	}
-	.div-content{
-		margin:4px 4px;
-		padding-top:8px;
-	}
-	.div-content-left{
-		padding:5px;
-		width:98%;
-		font-size:16px;
-		text-indent:40px;
-		line-height:1.2;
-	}
-	.div-title h1{
-		font-size:42px;
-		padding:8px 4px;
-		margin-left:10px;
-	}
 	
 	.skill-item{
 		margin:2px 0;
 		height:100px;
-		width:98%;
+		width:97%;
 	}
 	.skill-icon{
 		align-self:center;
@@ -408,7 +479,7 @@ footer .div-title{
 		line-height:1;
 	}
 	.showcase-button{
-		padding: 8px 32px;
+		padding: 6px 32px;
 	}
 
 }
@@ -437,6 +508,7 @@ footer .div-title{
 .center2{display:table;margin:0 auto;}
 .centert{text-align:center;}
 .center{display:flex;align-items:center;justify-content:center;}
+.stretch{align-items:stretch;}
 
 /*Absolute Positioning*/
 .absl{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);}
