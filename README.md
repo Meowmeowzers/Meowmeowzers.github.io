@@ -10,5 +10,6 @@
 
 ## Notes
 - Only HTML, CSS, Vanilla JS only
-- I wanna rebuild everything again wew
+- Im no designer
+- I might rebuild everything again next time
 - 
