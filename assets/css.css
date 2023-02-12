@@ -39,6 +39,8 @@ body {
 
 .navbar .hidden{
 	display:none;
+	margin-right:10px;
+	margin-top:5px;
 	float:right;
 }
 
@@ -374,6 +376,12 @@ footer>div{
 .icon-up{
 	background-image:url(arrow-up.svg);
 	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.icon-burger{
+	background-image:url(burger.svg);
+	background-size:120%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
