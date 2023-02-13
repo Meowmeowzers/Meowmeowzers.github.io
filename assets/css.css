@@ -19,6 +19,7 @@ body {
 	padding:0;
 	margin:0;
 	position:fixed;
+	transition:0.3s;
 }
 
 .navbar li {
@@ -58,7 +59,7 @@ a{
 }
 
 .div-title {
-	background-color:#333;
+	background-color:;
 }
 
 .div-title > h1{
@@ -249,7 +250,6 @@ footer>div{
 	filter:saturate(300%);
 	transition:0.3s;
 }
-
 .footer-content{
 	grid-area: 2 / 1 / 3 / 2;
 }
@@ -497,6 +497,9 @@ footer>div{
 	}
 	.showcase-button{
 		padding: 6px 32px;
+	}
+	.footer-copy{
+		font-size:14px;
 	}
 
 }
