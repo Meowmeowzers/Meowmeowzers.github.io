@@ -138,6 +138,8 @@ a{
 	place-content:start;
 	grid-row:2 / 3;
 }
+.showcase-details-description{
+}
 .showcase-image{
 	background:url(img1.png);
 	background-size:cover;
@@ -488,7 +490,7 @@ footer>div{
 	}
 
 	.showcase-container{
-		min-height:80vh;
+		min-height:82vh;
 		width:99%;
 		margin-left:auto;
 		margin-right:auto;
@@ -501,15 +503,22 @@ footer>div{
 	.showcase-details{
 		padding: 0 15px;
 	}
+	.showcase-details-description{
+		font-size:14px;
+	}
 	.showcase-button{
 		border-radius:20px;
 		padding: 8px 36px;
 	}
-	
+	.footer-content{
+		display:flex;
+		justify-content:center;
+		grid-area: 2 / 1 / 3 / 4;
+	}
 	.footer-copy{
+		grid-area: 3 / 2 / 4 / 3;
 		font-size:14px;
 	}
-
 }
 @media only screen and (min-width: 768px) {}
 @media only screen and (min-width: 992px) {}
