@@ -6,9 +6,13 @@ font-family: 'Roboto', sans-serif;
 *{
 	box-sizing:border-box;
 	transition:0.3s;
+	border:0px solid pink;
+	margin:0;
+	padding:0;
 }
 html{
 	scroll-behavior: smooth;
+	
 }
 body {
 	border:0px solid pink;
@@ -16,22 +20,20 @@ body {
 	color:white;
 	margin:auto;
 	padding:0;
-	width:100vw;
+	width:100%;
 	font-family: 'JetBrains Mono', 'Roboto', monospace;
 	user-select:none;
 }
 
 .navbar{
-	border:0px solid white;
 	background-color:#222222ee;
-	width:100vw;
+	width:100%;
 	padding:0;
 	margin:0;
 	position:fixed;
 	z-index:3;
 }
 .navbar li {
-	border:0px solid pink;
 	display:inline;
 	font-size:1.25rem;
 }
@@ -60,7 +62,7 @@ body {
 	place-content:center start;
 	background-color:#222222ee;
 	border:0px solid pink;
-	width:99vw;
+	width:100%;
 	height:100vh;
 	padding:0;
 	padding-top:10vh;
@@ -73,7 +75,7 @@ body {
 	width:50vw;
 	list-style-type:none;
 	border:0px solid pink;
-	font-size:1.75rem;
+	font-size:1.875rem;
 	padding:10px;
 }
 .navmenu>li>a:hover{
@@ -85,27 +87,28 @@ a{
 }
 
 .div-section{
-	padding-top:60px;
+	padding-top:70px;
+	width:100%;
 }
 
 .div-title {
-	background-color:;
+	padding-bottom:10px;
+	text-align:center;
 }
 
 .div-title > h1{
-	display:inline-block;
+	display:inline;
 	color:white;
-	font-size:1.75rem;
-	padding:0px 24px;
+	font-size:2.5rem;
 }
 
 .home {
 	display:flex;
 	align-items:center;
-	padding:10px 10px;
-	margin:0 auto;
+	padding:10px;
+	margin:0 0;
 	height:95vh;
-	width:95vw;
+	width:100%;
 	color: #30c5c5;
 	font-size:1.5rem;
 }
@@ -126,7 +129,7 @@ a{
 }
 
 .about-content{
-	width:97%;
+	width:100%;
 	padding:16px;
 	margin:0 auto;
 }
@@ -145,46 +148,45 @@ a{
 }
 
 .showcase-container{
-	background-image: linear-gradient(to right, #00000000, #111111aa ,#111111dd), url(img1.png);
-	display:grid;
-	min-height:80vh;
-	max-height:200vh;
-	width:80vw;
-	margin:0 auto;
-	margin-top:15px;
-	grid-template-columns:50% 50%;
+	background-image: linear-gradient(to right, #00000000, #111111aa ,#111111dd), url(img1.png);	
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:end;
+	align-items:end;
+	min-height:570px;
+	width:70%;
+	margin:15px auto;
 	border-radius:30px;
-	overflow:auto;
 }
 .showcase-details-container{
-	color:white;
-	display:grid;
-	min-height:80vh;
-	max-height:200vh;
-	grid-column:2 / 3;
-	grid-template-rows:38% auto;
-	overflow:auto;
+	display:flex;
+	flex-direction:row;
+	align-items:flex-end;
+	width:70%;
+	min-height:inherit;
+}
+.showcase-details-title{
+	padding-bottom:16px;	
 }
 .showcase-details{
-	display:grid;
-	grid-template-rows:15% auto 10%;
-	place-content:start;
-	grid-row:2 / 3;
-	overflow:auto;
-	padding-bottom:15px;
-	padding-right:15px;
+	display:flex;
+	flex-direction:column;
+	place-content:end;
+	padding:16px;
 }
 .showcase-details-description{
 	text-indent:24px;
+	padding-bottom:16px;
 }
-.showcase-image{
-	background:url(img1.png);
-	background-size:cover;
+.showcase-details-buttons{
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 .showcase-button{
+	display:inline-block;
 	background-color: #2a2;
-	border:none;
-	border-radius:30px;
+	border-radius:10px;
 	color: white;
 	cursor: pointer;
 	font-size: 1rem;
@@ -225,7 +227,7 @@ a{
 
 .skills-container{
 	display:flex;
-	width:99vw;
+	width:100%;
 	justify-content:center;
 	flex-wrap:wrap;
 	list-style-type:none;
@@ -260,7 +262,7 @@ a{
 }
 .skill-bar{
 	background-color:#888;
-	width:100%;
+	width:99%;
 	border-radius:16px;
 }
 .skill-bar-value{
@@ -273,7 +275,7 @@ a{
 
 footer{
 	display:grid;
-	width:100vw;
+	width:100%;
 	margin-top:30px;
 	padding-top:20px;
 	grid-template-columns:25% auto 25%;
@@ -480,7 +482,7 @@ footer>div{
 	}
 	.home-left{
 		align-self:flex-end;
-		width:100vw;
+		width:100%;
 	}
 	.home-left > .title{
 		font-size:3.5rem;
@@ -490,7 +492,7 @@ footer>div{
 	}
 	.home-right{
 		align-self:flex-start;
-		width:100vw;
+		width:100%;
 		font-size:1.75rem;
 	}
 	
@@ -500,7 +502,7 @@ footer>div{
 	.skill-item{
 		margin:3px 0;
 		height:100px;
-		width:99vw;
+		width:100%;
 	}
 	.skill-icon{
 		align-self:center;
@@ -530,17 +532,9 @@ footer>div{
 
 	.showcase-container{
 		background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);
-		width:96%;
+		width:99%;
 		margin:auto;
 		border-radius:15px;
-	}
-	.showcase-details-container{
-		grid-column:1 / 3;
-		grid-template-rows:45% auto;
-		align-items:space-between;
-	}
-	.showcase-details{
-		padding: 0 16px;
 	}
 	.showcase-details-description{
 		font-size:.875rem;
