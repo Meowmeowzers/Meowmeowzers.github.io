@@ -18,9 +18,15 @@
 		<li class="navhide"><a href="#work">WORK</a></li>
 		<li class="navhide"><a href="#skills">SKILLS</a></li>
 		<li class="navhide"><a href="#about">ABOUT</a></li>
-		<a href="#"><li class="hidden icon-burger"></li></a>
+		<a><li class="hidden icon-burger"></li></a>
 	</ul>
-	<br><br><br>
+	<ul class="navmenu">
+		<li><a class="navmenu-link" href="#home">HOME</a></li>
+		<li><a class="navmenu-link" href="#skills">SKILLS</a></li>
+		<li><a class="navmenu-link" href="#work">WORK</a></li>
+		<li><a class="navmenu-link" href="#footer">CONTACT</a></li>
+	</ul>
+	
 	<div class="home" id="home">
 		<div class="home-left">
 			<h1 class="title">Leonardo Laureta</h1>
@@ -201,18 +207,43 @@
 </body>
 
 <script>
+	//scroll
 	window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
 		if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
 			document.querySelector(".navbar").style.backgroundColor = "#222";
 			document.querySelector(".navbar").style.borderBottom = "1px solid #444"
-			document.querySelector(".navbar").style.opacity = ".8";
 		} else {
 			document.querySelector(".navbar").style.backgroundColor = "";
 			document.querySelector(".navbar").style.borderBottom = "";
-			document.querySelector(".navbar").style.opacity= "";
 		}
 	}
+	
+	//show navmenu
+	
+	const navMenu = document.querySelector(".navmenu");
+	const navMenuButton = document.querySelector(".hidden");
+	const navMenuLinks = document.querySelectorAll(".navmenu-link");
+	let isNavMenuOpen = false;
+	
+	navMenuButton.addEventListener("click", function(){
+		if(!isNavMenuOpen){
+			isNavMenuOpen = true;
+			navMenu.style.display = "flex";
+		}
+		else{
+			isNavMenuOpen = false;
+			navMenu.style.display = "none";
+		}
+	});
+	
+	for(let i = 0;i < navMenuLinks.length;i++){
+		navMenuLinks[i].addEventListener("click", function(){
+			isNavMenuOpen = false;
+			navMenu.style.display = "none";
+		});
+	}
+	
 	
 	//slide show
 	var slideIndex = 1;

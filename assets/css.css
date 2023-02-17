@@ -5,30 +5,38 @@ font-family: 'Roboto', sans-serif;
 
 *{
 	box-sizing:border-box;
+	transition:0.3s;
+}
+html{
+	scroll-behavior: smooth;
 }
 body {
+	border:0px solid pink;
 	background-color:#222;
 	color:white;
-	margin:0;
+	margin:auto;
 	padding:0;
-	min-height:2000px;
+	width:100vw;
 	font-family: 'JetBrains Mono', 'Roboto', monospace;
 	user-select:none;
 }
 
 .navbar{
-	width:98vw;
+	border:0px solid white;
+	background-color:#222222bb;
+	height:10vh;
+	width:100vw;
 	padding:0;
-	margin-top:0;
+	margin:0;
 	position:fixed;
-	transition:0.3s;
+	z-index:5;
 }
 .navbar li {
+	border:0px solid pink;
 	display:inline;
-	font-size:20px;
-	padding:20px 20px;
+	font-size:1.25rem;
 }
-.navbar li a:hover{
+.navbar>li>a:hover{
 	color: #30c5c5;
 }
 .navbar .navicon{
@@ -38,21 +46,48 @@ body {
 }
 .navbar .hidden{
 	display:none;
-	margin-right:15px;
-	margin-top:7px;
+	margin-right:25px;
+	padding:30px 20px;
 	float:right;
 }
 .navbar .navhide{
 	float:right;
+	justify-self:end;
+	padding:20px 20px;
 }
-
+.navmenu{
+	display:none;
+	flex-flow:column wrap;
+	place-content:center start;
+	background-color:#222222bb;
+	border:0px solid pink;
+	width:99vw;
+	height:90vh;
+	padding:0;
+	padding-top:5vh;
+	margin-top:10vh;
+	position:fixed;
+	z-index:5;
+}
+.navmenu>li{
+	display:flex;
+	justify-content:center;
+	width:50vw;
+	list-style-type:none;
+	border:0px solid pink;
+	font-size:1.75rem;
+	padding:10px;
+}
+.navmenu>li>a:hover{
+	color: #30c5c5;
+}
 a{
 	color:white;
 	text-decoration:none;
 }
 
 .div-section{
-	padding-top:20px;
+	padding-top:60px;
 }
 
 .div-title {
@@ -62,7 +97,7 @@ a{
 .div-title > h1{
 	display:inline-block;
 	color:white;
-	font-size:24px;
+	font-size:1.75rem;
 	padding:0px 24px;
 }
 
@@ -71,10 +106,10 @@ a{
 	align-items:center;
 	padding:10px 10px;
 	margin:0 auto;
-	height:90vh;
-	width:97%;
+	height:95vh;
+	width:95vw;
 	color: #30c5c5;
-	font-size:25px;
+	font-size:1.5rem;
 }
 .home .title{
 	margin-bottom:0;
@@ -84,11 +119,11 @@ a{
 }
 .home-left p{
 	margin:0;
-	font-size:15px;
+	font-size:1rem;
 }
 .home-right{
 	width:55%;
-	font-size:48px;
+	font-size:3rem;
 	text-align:center;
 }
 
@@ -101,10 +136,11 @@ a{
 	border-radius:10px;
 	padding:18px;
 	background-color:#334;
-	width:50%;
+	min-height:50vh;
+	width:60%;
 	margin-left:auto;
 	margin-right:auto;
-	font-size:18px;
+	font-size:1.125rem;
 	text-align:justify;
 	text-indent:50px;
 	line-height:1.5;
@@ -138,6 +174,7 @@ a{
 	grid-row:2 / 3;
 	overflow:auto;
 	padding-bottom:15px;
+	padding-right:15px;
 }
 .showcase-details-description{
 	text-indent:24px;
@@ -152,7 +189,7 @@ a{
 	border-radius:30px;
 	color: white;
 	cursor: pointer;
-	font-size: 18px;
+	font-size: 1rem;
 	padding: 12px 42px;
 	text-align: center;
 	text-decoration: none;
@@ -190,7 +227,7 @@ a{
 
 .skills-container{
 	display:flex;
-	width:100%;
+	width:99vw;
 	justify-content:center;
 	flex-wrap:wrap;
 	list-style-type:none;
@@ -206,7 +243,6 @@ a{
 }
 .skill-icon{
 	width:100px;
-	padding:0px;
 	margin:0px;
 }
 .skill-details{
@@ -215,32 +251,35 @@ a{
 .skill-title{
 	display:flex;
 	align-items:flex-end;
-	font-size:18px;
+	font-size:1.125rem;
 	padding-top:10px;
 	width:90%;
 	height:30%;			
 }
 .skill-bar-container{
-	padding:5px 0;	
+	padding:5px 0;
+	margin-right:5%;
 }
 .skill-bar{
 	background-color:#888;
 	width:100%;
-	border-radius:10px;
+	border-radius:16px;
 }
 .skill-bar-value{
-	height:22px;
+	height:30px;
 	display:flex;
 	align-items:center;
-	border-radius:10px;
+	border-radius:16px;
 	padding-left:10px;
 }
 
 footer{
 	display:grid;
-	width:98vw;
+	width:100vw;
 	margin-top:30px;
+	padding-top:20px;
 	grid-template-columns:25% auto 25%;
+	background-color:#292929;
 }
 footer>div{
 	border:;
@@ -251,7 +290,7 @@ footer>div{
 .footer-title > h1{
 	display:inline-block;
 	color:white;
-	font-size:24px;
+	font-size:1.5px;
 	padding:0px 24px;
 }
 .footer-go-up{
@@ -409,7 +448,7 @@ footer>div{
 		display:none;
 	}
 	.navbar>li {
-		font-size:24px;
+		font-size:1.5rem;
 		padding:12px 12px;
 	}
 	.navbar .navicon{
@@ -424,49 +463,46 @@ footer>div{
 	}
 	.about-content-left{
 		padding:12px;
-		width:94%;
-		font-size:16px;
+		width:97%;
+		font-size:1rem;
 		text-indent:40px;
-		line-height:1.2;
+		line-height:1.5;
 	}
 	.div-title h1{
-		font-size:24px;
+		font-size:1.75rem;
 		padding:0px 24px;
-	}
-	.div-section p{
-		font-size:16x;
 	}
 
 	.home {
 		flex-wrap:wrap;
-		justify-content:center;
 		padding:0px 5px;
-		height:90vh;
-		font-size:25px;
+		height:95vh;
+		font-size:1.5rem;
+		text-align:center;
 	}
 	.home-left{
 		align-self:flex-end;
-		width:99%;
+		width:100vw;
 	}
 	.home-left > .title{
-		font-size:56px;
+		font-size:3.5rem;
 	}
 	.home-left p{
-		font-size:18px;
+		font-size:1.125rem;
 	}
 	.home-right{
 		align-self:flex-start;
-		width:90%;
-		font-size:28px;
+		width:100vw;
+		font-size:1.75rem;
 	}
 	
 	.skills-container{
 		margin:auto;
 	}
 	.skill-item{
-		margin:2px 0;
+		margin:3px 0;
 		height:100px;
-		width:97%;
+		width:99vw;
 	}
 	.skill-icon{
 		align-self:center;
@@ -476,7 +512,6 @@ footer>div{
 	.skill-title{
 		display:flex;
 		align-items:flex-end;
-		font-size:16px;
 		height:30%;			
 	}
 	.skill-bar-container{
@@ -492,12 +527,11 @@ footer>div{
 		display:flex;
 		align-items:center;
 		border-radius:20px;
-		padding-left:10px;
+		padding-left:5%;
 	}
 
 	.showcase-container{
 		background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);
-		min-height:80vh;
 		width:96%;
 		margin:auto;
 		border-radius:15px;
@@ -509,10 +543,9 @@ footer>div{
 	}
 	.showcase-details{
 		padding: 0 16px;
-		padding-bottom:25px;
 	}
 	.showcase-details-description{
-		font-size:14px;
+		font-size:.875rem;
 	}
 	.showcase-button{
 		border-radius:20px;
@@ -551,9 +584,8 @@ footer>div{
 .width-25{width:25%;}
 .width-10{width:10%;}
 .center2{display:table;margin:0 auto;}
-.centert{text-align:center;}
+.center-text{text-align:center;}
 .center{display:flex;align-items:center;justify-content:center;}
-.stretch{align-items:stretch;}
 
 /*Absolute Positioning*/
 .absl{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);}
