@@ -23,13 +23,12 @@ body {
 
 .navbar{
 	border:0px solid white;
-	background-color:#222222bb;
-	height:10vh;
+	background-color:#222222ee;
 	width:100vw;
 	padding:0;
 	margin:0;
 	position:fixed;
-	z-index:5;
+	z-index:3;
 }
 .navbar li {
 	border:0px solid pink;
@@ -59,15 +58,14 @@ body {
 	display:none;
 	flex-flow:column wrap;
 	place-content:center start;
-	background-color:#222222bb;
+	background-color:#222222ee;
 	border:0px solid pink;
 	width:99vw;
-	height:90vh;
+	height:100vh;
 	padding:0;
-	padding-top:5vh;
-	margin-top:10vh;
+	padding-top:10vh;
 	position:fixed;
-	z-index:5;
+	z-index:2;
 }
 .navmenu>li{
 	display:flex;
