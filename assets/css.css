@@ -164,7 +164,7 @@ a{
 	background-image: linear-gradient(to right, #00000000, #111111aa ,#111111dd), url(img1.png);	
 	display:flex;
 	flex-flow:row wrap;
-	justify-content:center;
+	justify-content:flex-end;
 	align-items:center;
 	min-height:570px;
 	width:75%;
