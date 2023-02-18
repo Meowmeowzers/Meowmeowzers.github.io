@@ -4,7 +4,6 @@ font-family: 'Roboto', sans-serif;
 */
 
 *{
-	border:1px solid pink;
 	box-sizing:border-box;
 	transition:0.3s;
 	margin:0;
