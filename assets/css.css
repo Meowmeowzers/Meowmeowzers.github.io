@@ -10,8 +10,7 @@ font-family: 'Roboto', sans-serif;
 	padding:0;
 }
 html{
-	scroll-behavior: smooth;
-	
+	scroll-behavior: smooth;	
 }
 body {
 	background:#222 url(bg1.png) no-repeat fixed;
@@ -96,7 +95,7 @@ a{
 }
 
 .div-title {
-	padding-bottom:10px;
+	padding-bottom:24px;
 	text-align:center;
 }
 
@@ -301,25 +300,36 @@ a{
 	justify-content:space-between;
 	flex:row wrap;
 	min-height:10px;
-	width:75%;
+	width:80%;
 	margin-bottom:36px;
+	padding-bottom:36px;
+	border-bottom:1px solid #666;
 }
 .new-skill-detail{
 	display:flex;
-	justify-content:center;
+	justify-content:space-around;
 	align-items:center;
-	flex-direction:column;
+	flex-flow:row wrap;
 	min-height:200px;
-	min-width:540px;
+	min-width:580px;
 	background-color:#334;
 	border-radius:36px;
-	padding:16px;
+	padding:32px;
 	font-size:18px;
 }
 .new-skill-detail > ul{
 	list-style-type:none;
 }
-
+.new-skill-detail-item{
+	display:flex;
+	flex-flow:row wrap;
+	align-items:center;
+	width:40%;
+	border-bottom:1px solid #555;
+}
+.skill-detail-item-name{
+	padding-left:12px;
+}
 .new-skill-category{
 	min-width:200px;
 	padding:0 40px;
@@ -329,6 +339,7 @@ a{
 }
 .new-skill-category-name{
 	text-align:center;
+	width:400px;
 }
 .footer{
 	margin-top:30px;
@@ -387,16 +398,6 @@ a{
 	height:50px;
 	padding:0px;
 	margin:0px;
-}
-.icon-flag{
-	display:inline;
-	padding:0 13px;
-	height:1px;
-	width:0px;
-	background-image:url(https://flagicons.lipis.dev/flags/4x3/ph.svg);
-	background-size:75% 75%;
-	background-repeat:no-repeat;
-	background-position:center;
 }
 .icon-cpp{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg);
