@@ -14,7 +14,7 @@ html{
 	
 }
 body {
-	background:#222 url("bg1.png") no-repeat fixed;
+	background:#222 url(bg1.png) no-repeat fixed;
 	background-size:cover;
 	color:white;
 	margin:auto;
@@ -298,11 +298,11 @@ a{
 }
 .new-skill-item{
 	display:flex;
-	justify-content:center;
+	justify-content:space-between;
 	flex:row wrap;
 	min-height:10px;
-	width:70%;
-	margin-bottom:16px;
+	width:75%;
+	margin-bottom:36px;
 }
 .new-skill-detail{
 	display:flex;
@@ -459,12 +459,6 @@ a{
 	background-repeat:no-repeat;
 	background-position:center;
 }
-.icon-devicon{
-	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg);
-	background-size:75% 75%;
-	background-repeat:no-repeat;
-	background-position:center;
-}
 .icon-fb{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg);
 	background-size:75% 75%;
@@ -486,11 +480,26 @@ a{
 	background-position:center;
 	filter:invert(100%);
 }
-.icon-ph{
-	background-image:url(https://flagicons.lipis.dev/flags/4x3/ph.svg);
+.icon-code{
+	background-image:url(code-square.svg);
 	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
+	filter:invert(100%);
+}
+.icon-controller{
+	background-image:url(controller.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+	filter:invert(100%);
+}
+.icon-chrome{
+	background-image:url(browser-chrome.svg);
+	background-size:75% 75%;
+	background-repeat:no-repeat;
+	background-position:center;
+	filter:invert(100%);
 }
 .icon-up{
 	background-image:url(arrow-up.svg);
