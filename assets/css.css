@@ -119,7 +119,6 @@ a{
 	margin-bottom:0;
 }
 .home-left{
-	sborder:1px solid white;
 	padding:0px 30px;
 	width:45%;
 	text-align:center;
@@ -129,7 +128,6 @@ a{
 	font-size:1rem;
 }
 .home-right{
-	sborder:1px solid white;	
 	width:55%;
 	padding:16px;
 	font-size:3rem;
@@ -146,7 +144,7 @@ a{
 .about-content-left{
 	display:flex;
 	flex-flow:row wrap;
-	border-radius:10px;
+	border-radius:16px;
 	min-height:300px;
 	padding:18px;
 	background-color:#334;
@@ -213,81 +211,61 @@ a{
 	color: #2a2;
 }
 
-.slideshow{
-	width:100%;
-	height:80vh;
-}
-.slides{
-	display:none;
-	width:100%;
-	height:100%;
-}
-.slideSeek{
-	cursor:pointer;
-	border:1px solid white;
-	border-radius:100%;
-}
-
-.btn-arw{
-	border:1px solid white;
-	display:inline;
-	padding:10px 15px;
-	width:10px;
-	text-align:center;
-	cursor:pointer;
-	transition:.3s;
-}
-.btn-arw:hover{background-color:white;color: #30c5c5;}
-
-
-.skills-container{
+.new-showcase-container{
 	display:flex;
-	width:100%;
-	justify-content:center;
-	flex-wrap:wrap;
-	list-style-type:none;
-	margin:0 auto;
-	padding:0px;
+	flex-flow:row wrap;
+	justify-content: center;
 }
-.skill-item{
+.showcard-container{
+	background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);	
+	border-radius: 16px;
 	display:flex;
-	height:100px;
-	width:40%;
-	color:white;
-	padding:0px;
+	flex-flow:column wrap;
+	justify-content: flex-end;
+	width:540px;
+	margin:24px;
+	min-height:360px;
+	padding:20px;
 }
-.skill-icon{
-	width:100px;
-	margin:0px;
+.showcard-details{}
+.showcard-details-title{
+	padding-bottom: 8px;
 }
-.skill-details{
-	width:80%;
-}
-.skill-title{
+.showcard-details-description{}
+.showcard-button-container{
 	display:flex;
-	align-items:flex-end;
-	font-size:1.125rem;
-	padding-top:10px;
-	width:90%;
-	height:30%;
+	justify-content: center;
 }
-.skill-bar-container{
-	padding:5px 0;
-	margin-right:5%;
+.showcard-button-filled{
+	background-color: #eee;
+	border:2px solid #eee;
+	border-radius: 12px;
+	color: #111;
+	display:inline-block;
+	margin:0 12px;
+	min-width:76px;
+	padding:4px;
+	text-align: center;
 }
-.skill-bar{
-	background-color:#888;
-	width:99%;
-	border-radius:16px;
+.showcard-button{
+	border:2px solid #eee;
+	border-radius: 12px;
+	color: #eee;
+	display:inline-block;
+	margin:0 12px;
+	min-width:76px;
+	padding:4px;
+	text-align: center;
 }
-.skill-bar-value{
-	height:30px;
-	display:flex;
-	align-items:center;
-	border-radius:16px;
-	padding-left:10px;
+.showcard-button-filled:hover{
+	border: 2px solid #ff9a00;
+	background-color: #ff9a00;
+	color: #eee;
 }
-
+.showcard-button:hover{
+	border: 2px solid #ff9a00;
+	background-color: #ff9a00;
+}
 .new-skill-container{
 	display:flex;
 	justify-content:center;
@@ -301,8 +279,7 @@ a{
 	flex:row wrap;
 	min-height:10px;
 	width:80%;
-	margin-bottom:36px;
-	padding-bottom:36px;
+	padding:48px 0;
 	border-bottom:1px solid #666;
 }
 .new-skill-detail{
@@ -311,20 +288,18 @@ a{
 	align-items:center;
 	flex-flow:row wrap;
 	min-height:200px;
-	min-width:580px;
+	width:580px;
 	background-color:#334;
-	border-radius:36px;
+	border-radius:16px;
 	padding:32px;
 	font-size:18px;
-}
-.new-skill-detail > ul{
-	list-style-type:none;
+	border:1px solid #445;
 }
 .new-skill-detail-item{
 	display:flex;
 	flex-flow:row wrap;
 	align-items:center;
-	width:40%;
+	width:180px;
 	border-bottom:1px solid #555;
 }
 .skill-detail-item-name{
