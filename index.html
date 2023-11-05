@@ -22,10 +22,13 @@
 			<a class="link" href="#skills">SKILLS</a>
 			<a class="link" href="#work">PROJECTS</a>
 			<a class="link" href="#footer">CONTACT</a>
-			<a class="hidden link icon-burger"></a>
+		</div>
+		<div class="hidden">
+			<a class="link icon-burger"></a>
 		</div>
 	</div>
 	<ul class="navmenu">
+		<li><a class="link" href="#home">HOME</a></li>
 		<li><a class="link" href="#about">ABOUT</a></li>
 		<li><a class="link" href="#skills">SKILLS</a></li>
 		<li><a class="link" href="#work">PROJECTS</a></li>
@@ -205,38 +208,61 @@
 
 <script>
 	//scroll
+	const navBar = document.querySelector(".navbar");
 	window.onscroll = function() {scrollFunction()};
+
 	function scrollFunction() {
 		if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
 			document.querySelector(".navbar").style.backgroundColor = "#111111cc";
-			//document.querySelector(".navbar").style.borderBottom = "1px solid #33333355"
+			//navBar.style.borderBottom = "1px solid #33333355"
 		} else {
 			document.querySelector(".navbar").style.backgroundColor = "";
-			//document.querySelector(".navbar").style.borderBottom = "";
+			//navBar.style.borderBottom = "";
 		}
 	}
+	//resize
+	/*
+	window.onresize = function () {};
 	
-	//show navmenu   
+	function resizeFunction() {
+		console.log(window.innerWidth);
+		if (window.screen.width > 768)
+			navMenuButton.style.display = "none";
+		else
+			navMenuButton.style.display = "flex";
+	}
+	*/
+	//show navmenu
 	const navMenu = document.querySelector(".navmenu");
 	const navMenuButton = document.querySelector(".hidden");
 	const navMenuLinks = document.querySelectorAll(".navmenu>li>a");
+	const navIcon = document.querySelector(".navicon");
+
 	let isNavMenuOpen = false;
 	
 	navMenuButton.addEventListener("click", function(){
 		if(!isNavMenuOpen){
 			isNavMenuOpen = true;
 			navMenu.style.display = "flex";
+			navIcon.style.display = "none";
+			navMenuButton.style.display = "none";
+			navBar.style.display = "none";
 		}
 		else{
 			isNavMenuOpen = false;
 			navMenu.style.display = "none";
+			navIcon.style.display = "flex";
+			navMenuButton.style.display = "flex";
 		}
 	});
 	
 	for(let i = 0;i < navMenuLinks.length;i++){
 		navMenuLinks[i].addEventListener("click", function(){
 			isNavMenuOpen = false;
-			navMenu.style.display = "none";
+			navMenu.style.display = "";
+			navIcon.style.display = "";
+			navMenuButton.style.display = "";
+			navBar.style.display = "";
 		});
 	}
 </script>

@@ -37,6 +37,7 @@ a{
 	background-color:#111111aa;
 	display:flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 	font-size: 20px;
 	position:fixed;
 	width:100%;
@@ -46,7 +47,7 @@ a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	width: 40%;
+	width: 16%;
 	padding-left:8px;
 }
 .navicon a{
@@ -56,7 +57,7 @@ a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
-	width: 60%;
+	align-items:center;
 	padding-right:8px;
 }
 .navhide a{
@@ -71,6 +72,18 @@ a{
 }
 .navmenu{
 	display: none;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	height:100%;
+	width:100%;
+	position: fixed;
+	background: #111111cc;
+	font-size: 48px;
+	font-weight: bold;
+}
+.navmenu li{
+	list-style-type: none;
 }
 .div-section{
 	min-height:400px;
@@ -512,27 +525,28 @@ a{
 }
 .icon-burger{
 	background-image:url(burger.svg);
-	background-size:120%;
+	background-size:100%;
 	background-repeat:no-repeat;
 	background-position:center;
+	height:42px;
+	width:42px;
 }
 
 /**/
 @media only screen and (max-width: 768px) {
-	.navbar .hidden{
-		display:inline;
-	}
 	.navbar .navhide{
 		display:none;
 	}
-	.navbar>li {
-		font-size:1.5rem;
-		padding:12px 12px;
+	.navicon{
+		padding:8px;
 	}
-	.navbar .navicon{
-		padding:12px 12px;
+	.hidden{
+		display:flex;
 	}
-
+	.icon-burger{
+		height:56px;
+		width:56px;	
+	}
 	.about-content{
 		padding-top:8px;
 		padding-left:4px;
