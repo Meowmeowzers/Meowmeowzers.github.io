@@ -46,7 +46,7 @@ a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	width: 50%;
+	width: 40%;
 	padding-left:8px;
 }
 .navicon a{
@@ -56,7 +56,7 @@ a{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: flex-end;
-	width: 50%;
+	width: 60%;
 	padding-right:8px;
 }
 .navhide a{
@@ -137,10 +137,25 @@ a{
 	display:flex;
 	flex:row wrap;
 	justify-content: space-between;
+	padding-bottom:14px;
+}
+/*make it into 2 flex div*/
+.home-links{
+	display:flex;
+	flex-flow: row wrap;
+}
+.home-social{
+	border-left:2px solid #eee;
+	padding-left:8px;
+}
+.home-social a:hover{
+	color: #2eb9b9;
+	transition:0.1s;
 }
 .home-arrow{
 	justify-self: center;
 	max-width:70px;
+	padding-right: 8px;
 }
 .about-content{
 	display:flex;
@@ -532,26 +547,10 @@ a{
 	}
 
 	.home {
-		padding:0px 5px;
+		padding-top:150px;
 		font-size:1.5rem;
-		text-align:center;
-	}
-	.home-left{
-		align-self:flex-end;
 		width:100%;
 	}
-	.home-left > .title{
-		font-size:3rem;
-	}
-	.home-left p{
-		font-size:1.125rem;
-	}
-	.home-right{
-		align-self:flex-start;
-		width:100%;
-		font-size:1.75rem;
-	}
-	
 	.skill-item{
 		margin:5px 0;
 		max-height:100px;
