@@ -38,7 +38,7 @@
 			<hr>
 			<p>Newb Programmer/Software Developer</p>
 		</div>
-		<div class="home-bottom">
+		<div class="home-bottom ">
 			<div class="home-links">
 				<div><a class="home-resume-button" href="#">Resume</a></div>
 				<div class="home-social">
@@ -208,16 +208,15 @@
 	window.onscroll = function() {scrollFunction()};
 	function scrollFunction() {
 		if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
-			document.querySelector(".navbar").style.backgroundColor = "#111111bb";
-			document.querySelector(".navbar").style.borderBottom = "1px solid #333"
+			document.querySelector(".navbar").style.backgroundColor = "#111111cc";
+			//document.querySelector(".navbar").style.borderBottom = "1px solid #33333355"
 		} else {
 			document.querySelector(".navbar").style.backgroundColor = "";
-			document.querySelector(".navbar").style.borderBottom = "";
+			//document.querySelector(".navbar").style.borderBottom = "";
 		}
 	}
 	
-	//show navmenu
-	
+	//show navmenu   
 	const navMenu = document.querySelector(".navmenu");
 	const navMenuButton = document.querySelector(".hidden");
 	const navMenuLinks = document.querySelectorAll(".navmenu>li>a");

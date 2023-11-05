@@ -34,7 +34,7 @@ a{
 	color: #30c5c5;
 }
 .navbar{
-	background-color:#11111155;
+	background-color:#111111aa;
 	display:flex;
 	flex-flow: row wrap;
 	font-size: 20px;
@@ -104,15 +104,19 @@ a{
 	display:flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	padding-top:250px;
+	align-items: center;
 	text-align:center;
 	color: #30c5c5;
 	width:50%;
+	height:80vh;
 }
-.home > p{
+.home p{
 	margin:0;
 	font-size:16px;
 	color: #eee;
+}
+.home hr{
+	width: 100%;
 }
 .home-resume{
 	margin-top: 16px;
@@ -134,6 +138,7 @@ a{
 }
 .home-bottom{
 	width:100%;
+	height:8vh;
 	display:flex;
 	flex:row wrap;
 	justify-content: space-between;
@@ -145,12 +150,12 @@ a{
 	flex-flow: row wrap;
 }
 .home-social{
-	border-left:2px solid #eee;
+	border-left:1px solid #eeeeee55;
 	padding-left:8px;
 }
 .home-social a:hover{
 	color: #2eb9b9;
-	transition:0.1s;
+	transition:0;
 }
 .home-arrow{
 	justify-self: center;
@@ -547,38 +552,14 @@ a{
 	}
 
 	.home {
-		padding-top:150px;
 		font-size:1.5rem;
 		width:100%;
 	}
-	.skill-item{
-		margin:5px 0;
-		max-height:100px;
-		width:100%;
+	.home-bottom{
+		justify-content: center;
 	}
-	.skill-icon{
-		align-self:center;
-		width:20%;
-		height:80%;	
-	}
-	.skill-title{
-		font-size:1.0625rem;
-		height:30%;			
-	}
-	.skill-bar-container{
-		padding:10px 0;
-	}
-	.skill-bar{
-		border-radius:20px;
-		height:32px;
-	}
-	.skill-bar-value{
-		width:100%;
-		height:32px;
-		display:flex;
-		align-items:center;
-		border-radius:20px;
-		padding-left:5%;
+	.home-arrow{
+		display: none;
 	}
 	.showcase-container{
 		background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);
