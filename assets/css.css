@@ -119,9 +119,12 @@ a{
 	justify-content: center;
 	align-items: center;
 	text-align:center;
-	color: #30c5c5;
 	width:50%;
 	height:80vh;
+}
+.home h1{
+	color: #30c5c5;
+	font-size:64px;
 }
 .home p{
 	margin:0;
@@ -308,6 +311,31 @@ a{
 	border: 2px solid #2eb9b9;
 	background-color: #2eb9b9;
 }
+.skill-container{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.skill-category{
+	width:45%;
+	padding:10px;
+	display:flex;
+	flex-flow:column wrap;
+	align-items: center;
+}
+.skill-item-container{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: center;
+}
+.skill-item{
+	border:0px solid #eeeeee11;
+	border-radius:50%;
+	height:120px;
+	width:120px;
+	margin:8px;
+}
+
 .new-skill-container{
 	display:flex;
 	justify-content:center;
@@ -434,31 +462,31 @@ a{
 }
 .icon-kt{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg);
-	background-size:70% 70%;
+	background-size:60% 60%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-py{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg);
-	background-size:75% 75%;
+	background-size:80% 80%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-html{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg);
-	background-size:75% 75%;
+	background-size:65% 65%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-css{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg);
-	background-size:75% 75%;
+	background-size:65% 65%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .icon-js{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg);
-	background-size:75% 75%;
+	background-size:65% 65%;
 	background-repeat:no-repeat;
 	background-position:center;
 }
@@ -475,12 +503,11 @@ a{
 	background-repeat:no-repeat;
 	background-position:center;
 }
-.icon-fb{
-	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg);
+.icon-git{
+	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg);
 	background-size:75% 75%;
 	background-repeat:no-repeat;
 	background-position:center;
-	filter:brightness(50%) invert(100%);
 }
 .icon-github{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg);
