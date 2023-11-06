@@ -602,6 +602,12 @@ a{
 	.home-arrow{
 		display: none;
 	}
+	.skill-container{
+		flex-flow: column wrap;
+	}
+	.skill-category{
+		width: 100%;
+	}
 	.showcase-container{
 		background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);
 		width:99%;
