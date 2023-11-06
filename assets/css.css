@@ -608,6 +608,10 @@ a{
 	.skill-category{
 		width: 100%;
 	}
+	.skill-item{
+		height:80px;
+		width:80px;
+	}
 	.showcase-container{
 		background-image: linear-gradient(to bottom, #00000000, #111111aa ,#111111dd), url(img1.png);
 		width:99%;

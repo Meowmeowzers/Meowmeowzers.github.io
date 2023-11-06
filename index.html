@@ -236,49 +236,32 @@
 </body>
 
 <script>
-	//scroll
-	const navBar = document.querySelector(".navbar");
-	window.onscroll = function() {scrollFunction()};
+	const body = document.body;
+	const docElement = document.documentElement;
 
-	function scrollFunction() {
-		if (document.body.scrollTop > window.innerHeight*.9 || document.documentElement.scrollTop > window.innerHeight*.9) {
-			document.querySelector(".navbar").style.backgroundColor = "#111111cc";
-			//navBar.style.borderBottom = "1px solid #33333355"
-		} else {
-			document.querySelector(".navbar").style.backgroundColor = "";
-			//navBar.style.borderBottom = "";
-		}
-	}
-	//resize
-	/*
-	window.onresize = function () {};
-	
-	function resizeFunction() {
-		console.log(window.innerWidth);
-		if (window.screen.width > 768)
-			navMenuButton.style.display = "none";
-		else
-			navMenuButton.style.display = "flex";
-	}
-	*/
-	//show navmenu
+	const navBar = document.querySelector(".navbar");
 	const navMenu = document.querySelector(".navmenu");
 	const navMenuButton = document.querySelector(".hidden");
 	const navMenuLinks = document.querySelectorAll(".navmenu>li>a");
 	const navIcon = document.querySelector(".navicon");
 
-	let isNavMenuOpen = false;
+	
+	function scrollFunction() {
+		if (body.scrollTop > window.innerHeight*.9 || docElement.scrollTop > window.innerHeight*.9) {
+			navBar.style.backgroundColor = "#111111cc";
+		} else {
+			navBar.style.backgroundColor = "";
+		}
+	}
 	
 	navMenuButton.addEventListener("click", function(){
-		if(!isNavMenuOpen){
-			isNavMenuOpen = true;
+		if(navMenu.style.display = "none"){
 			navMenu.style.display = "flex";
 			navIcon.style.display = "none";
 			navMenuButton.style.display = "none";
 			navBar.style.display = "none";
 		}
 		else{
-			isNavMenuOpen = false;
 			navMenu.style.display = "none";
 			navIcon.style.display = "flex";
 			navMenuButton.style.display = "flex";
@@ -287,13 +270,14 @@
 	
 	for(let i = 0;i < navMenuLinks.length;i++){
 		navMenuLinks[i].addEventListener("click", function(){
-			isNavMenuOpen = false;
-			navMenu.style.display = "";
 			navIcon.style.display = "";
 			navMenuButton.style.display = "";
+			navMenu.style.display = "";
 			navBar.style.display = "";
 		});
 	}
+	window.onscroll = function() {scrollFunction()};
+	//window.onresize = function () {resizeFunction()};
 </script>
 </html>
 	<!--
@@ -301,4 +285,3 @@
 	<span class="chip bg-color-orange white">Test 2</span>
 	<span class="chip bg-color-yellow blue">Test 3</span>
 	-->
-			
