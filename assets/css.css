@@ -117,7 +117,7 @@ a {
 
 .div-title>h1 {
 	display: inline;
-	color: #30c5c5;
+	color: #eee;
 	font-size: 2.5rem;
 }
 
@@ -224,7 +224,7 @@ a {
 	min-height: 300px;
 	padding: 18px;
 	background-color: #334;
-	width: 60%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 1.125rem;
@@ -233,6 +233,11 @@ a {
 	line-height: 1.5;
 }
 
+.about-content-left span{
+	color:#36d8d8;
+	border-bottom:2px solid #36d8d8;
+	padding: 0 4px;
+}
 .showcase-container {
 	background-image: linear-gradient(to right, #00000000, #111111aa, #111111dd), url(img1.png);
 	display: flex;
@@ -371,6 +376,12 @@ a {
 	background-color: #334;
 	border-radius: 16px;
 	margin: 4px;
+	/*
+	box-shadow:
+    inset 60px 0 120px #333350,  
+    inset -60px 0 120px #33335f; 
+	*/
+	
 }
 
 .skill-category h2{
@@ -384,69 +395,14 @@ a {
 }
 
 .skill-item {
-	border: 0px solid #eeeeee11;
 	border-radius: 50%;
 	height: 120px;
 	width: 120px;
 	margin: 8px;
 }
 
-.new-skill-container {
-	display: flex;
-	justify-content: center;
-	flex-flow: column wrap;
-	align-items: center;
-
-}
-
-.new-skill-item {
-	display: flex;
-	justify-content: space-between;
-	flex: row wrap;
-	min-height: 10px;
-	width: 80%;
-	padding: 48px 0;
-	border-bottom: 1px solid #666;
-}
-
-.new-skill-detail {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-flow: row wrap;
-	min-height: 200px;
-	width: 580px;
-	background-color: #334;
-	border-radius: 16px;
-	padding: 32px;
-	font-size: 18px;
-	border: 1px solid #445;
-}
-
-.new-skill-detail-item {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	width: 200px;
-	border-bottom: 1px solid #555;
-}
-
-.skill-detail-item-name {
-	padding-left: 12px;
-}
-
-.new-skill-category {
-	min-width: 200px;
-	padding: 0 40px;
-}
-
-.new-skill-logo {
-	height: 200px;
-}
-
-.new-skill-category-name {
-	text-align: center;
-	width: 400px;
+.skill-item:hover{
+	background-color: #445;
 }
 
 .footer {
@@ -516,7 +472,7 @@ a {
 }
 
 .icon-cpp {
-	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg);
+	background-image: url(ISO_C++_Logo.svg);
 	background-size: 75% 75%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -579,8 +535,8 @@ a {
 }
 
 .icon-unity {
-	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg);
-	filter: invert(100%);
+	background-image: url(unity.svg);
+	color:#aaa;
 	background-size: 75% 75%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -594,11 +550,10 @@ a {
 }
 
 .icon-github {
-	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg);
+	background-image: url(github-mark-white.svg);
 	background-size: 75% 75%;
 	background-repeat: no-repeat;
 	background-position: center;
-	filter: invert(100%);
 }
 
 .icon-linkedin {
