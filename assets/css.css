@@ -225,8 +225,6 @@ a {
 	padding: 18px;
 	background-color: #334;
 	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 1.125rem;
 	text-align: justify;
 	text-indent: 50px;
@@ -238,79 +236,20 @@ a {
 	border-bottom:2px solid #36d8d8;
 	padding: 0 4px;
 }
-.showcase-container {
-	background-image: linear-gradient(to right, #00000000, #111111aa, #111111dd), url(img1.png);
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	align-items: center;
-	min-height: 450px;
-	width: 90%;
-	margin: 15px auto;
-	border-radius: 30px;
-}
-
-.showcase-details-container {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	width: 70%;
-	min-height: inherit;
-}
-
-.showcase-details-title {
-	padding-bottom: 16px;
-}
-
-.showcase-details {
-	display: flex;
-	flex-direction: column;
-	padding: 16px;
-}
-
-.showcase-details-description {
-	text-indent: 24px;
-	padding-bottom: 16px;
-}
-
-.showcase-details-buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-flow: row wrap;
-}
-
-.showcase-button {
-	display: inline-block;
-	background-color: #2a2;
-	border-radius: 10px;
-	color: white;
-	cursor: pointer;
-	font-size: 1rem;
-	padding: 12px 42px;
-	text-align: center;
-	text-decoration: none;
-	margin: 0 5px;
-}
-
-.showcase-button:hover {
-	background-color: #fff;
-	color: #2a2;
-}
-
-.new-showcase-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
 
 .showcard-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.showcard-item {
 	background-image: linear-gradient(to bottom, #00000000, #111111aa, #111111dd), url(img1.png);
 	border-radius: 16px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-end;
-	width: 540px;
+	max-width: 40%;
 	margin: 24px;
 	min-height: 360px;
 	padding: 20px;
@@ -323,6 +262,7 @@ a {
 .showcard-button-container {
 	display: flex;
 	justify-content: center;
+	margin-top: 8px;
 }
 
 .showcard-button-filled {
@@ -623,26 +563,6 @@ a {
 		width: 56px;
 	}
 
-	.about-content {
-		padding-top: 8px;
-		padding-left: 4px;
-		padding-right: 4px;
-		margin: auto;
-	}
-
-	.about-content-left {
-		padding: 12px;
-		width: 97%;
-		font-size: 1rem;
-		text-indent: 40px;
-		line-height: 1.5;
-	}
-
-	.div-title h1 {
-		font-size: 1.75rem;
-		padding: 0px 24px;
-	}
-
 	.home {
 		font-size: 1.5rem;
 		width: 100%;
@@ -650,10 +570,28 @@ a {
 
 	.home-bottom {
 		justify-content: center;
+		margin-bottom: 16px;
 	}
 
 	.home-arrow {
 		display: none;
+	}
+
+	.about-content {
+		padding-top: 8px;
+	}
+
+	.about-content-left {
+		padding: 16px;
+		width: 98%;
+		font-size: 1rem;
+		text-indent: 40px;
+		line-height: 1.75;
+	}
+
+	.div-title h1 {
+		font-size: 1.75rem;
+		padding: 0px 24px;
 	}
 
 	.skill-container {
@@ -663,7 +601,6 @@ a {
 
 	.skill-category {
 		min-width: 90%;
-
 	}
 
 	.skill-item {
@@ -671,26 +608,10 @@ a {
 		width: 80px;
 	}
 
-	.showcase-container {
-		background-image: linear-gradient(to bottom, #00000000, #111111aa, #111111dd), url(img1.png);
-		width: 99%;
-		margin: auto;
-		border-radius: 15px;
+	.showcard-item{
+		max-width: 98%;
+		margin: 16px 0px;
 	}
-
-	.showcase-details-container {
-		width: 100%;
-	}
-
-	.showcase-details-description {
-		font-size: .875rem;
-	}
-
-	.showcase-button {
-		border-radius: 15px;
-		padding: 8px 36px;
-	}
-
 	.footer-container {
 		flex-direction: column;
 	}
