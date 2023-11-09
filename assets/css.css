@@ -94,6 +94,7 @@ a {
 	background: #111111cc;
 	font-size: 48px;
 	font-weight: bold;
+	z-index: 3;
 }
 
 .navmenu li {
@@ -128,7 +129,6 @@ a {
 	align-items: center;
 	margin: 0;
 	height: 95vh;
-	width: 100%;
 	font-size: 28px;
 	padding: 0 16px;
 }
@@ -583,10 +583,11 @@ a {
 		height: 56px;
 		width: 56px;
 	}
-
+	.home-container{
+		height:90vh;
+	}
 	.home {
 		font-size: 1.5rem;
-		width: 100%;
 	}
 
 	.home-bottom {
