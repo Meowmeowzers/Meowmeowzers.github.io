@@ -567,6 +567,9 @@ a {
 
 /**/
 @media only screen and (max-width: 768px) {
+	.body{
+		background-size: auto 100lvh;
+	}
 	.navbar .navhide {
 		display: none;
 	}
@@ -583,11 +586,14 @@ a {
 		height: 56px;
 		width: 56px;
 	}
+
 	.home-container{
-		height:90vh;
+		height:85vh;
 	}
+
 	.home {
 		font-size: 1.5rem;
+		height:70vh;
 	}
 
 	.home-bottom {
