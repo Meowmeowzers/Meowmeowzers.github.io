@@ -338,6 +338,7 @@ a {
 .footer {
 	padding: 20px 20px;
 	background-color: #111111ee;
+	font-size: 12px;
 }
 
 .footer-container {
@@ -378,6 +379,8 @@ a {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .icon-small {
@@ -639,18 +642,12 @@ a {
 		max-width: 98%;
 		margin: 16px 0px;
 	}
+
 	.footer-container {
 		flex-direction: column;
 	}
-
 	.footer-item {
 		padding-top: 12px;
-		width: 100%;
-	}
-
-	.footer-item-logo {
-		padding-top: 12px;
-		justify-content: center;
 		width: 100%;
 	}
 }
