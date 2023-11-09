@@ -123,7 +123,7 @@ a {
 
 .home-container {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
@@ -139,7 +139,6 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 50%;
 	height: 80vh;
 }
 
@@ -158,20 +157,23 @@ a {
 	width: 100%;
 }
 
-.home-resume {
-	margin-top: 16px;
+.home-bottom {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	align-items: center;
+	margin-bottom: 8px;
 }
 
 .home-resume-button {
-	font-size: 16px;
+	display:flex;
+	align-items: center;
 	border: 2px solid #eee;
 	border-radius: 8px;
-	color: #eee;
-	display: inline-block;
+	padding: 4px;
 	margin: 0 12px;
-	min-width: 76px;
-	padding: 8px;
-	text-align: center;
+	color: #eee;
+	font-size: 16px;
 }
 
 .home-resume-button:hover {
@@ -179,33 +181,21 @@ a {
 	background-color: #2eb9b9;
 }
 
-.home-bottom {
-	width: 100%;
-	height: 8vh;
-	display: flex;
-	flex: row wrap;
-	justify-content: space-between;
-	padding-bottom: 14px;
-}
-
-.home-links {
-	display: flex;
-	flex-flow: row wrap;
-}
-
 .home-social {
+	display:flex;
+	align-items: center;
 	border-left: 1px solid #eeeeee55;
-	padding-left: 8px;
+	padding-left: 4px;
 }
 
 .home-social a:hover {
-	color: #2eb9b9;
-	transition: 0;
+	background-color: #2eb9b933;
 }
 
 .home-arrow {
-	justify-self: center;
-	max-width: 70px;
+	display:flex;
+	flex-grow: 8;
+	justify-content: flex-end;
 	padding-right: 8px;
 }
 
@@ -495,7 +485,23 @@ a {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.icon-github2 {
+	background-image: url(github2.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px;
+	filter: invert(90%);
+}
 
+.icon-email{
+	background-image: url(email.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px;
+	filter: invert(90%);
+}
 .icon-linkedin {
 	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg);
 	background-size: 75% 75%;
@@ -503,7 +509,15 @@ a {
 	background-position: center;
 	filter: invert(100%);
 }
-
+.icon-linkedin2 {
+	background-image: url(linkedin2.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: invert(100%);
+	padding:20px;
+	filter: invert(90%);
+}
 .icon-code {
 	background-image: url(code-square.svg);
 	background-size: 75% 75%;
@@ -534,7 +548,14 @@ a {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
+.icon-down {
+	background-image: url(arrow-up.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px 30px;
+	rotate: 180deg;
+}
 .icon-burger {
 	background-image: url(burger.svg);
 	background-size: 100%;
@@ -570,7 +591,6 @@ a {
 
 	.home-bottom {
 		justify-content: center;
-		margin-bottom: 16px;
 	}
 
 	.home-arrow {
