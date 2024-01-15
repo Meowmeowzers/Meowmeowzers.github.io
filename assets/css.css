@@ -128,7 +128,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
-	height: 95vh;
+	height: 95lvh;
 	font-size: 28px;
 	padding: 0 16px;
 }
@@ -139,7 +139,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: 80vh;
+	height: 80lvh;
 }
 
 .home h1 {
