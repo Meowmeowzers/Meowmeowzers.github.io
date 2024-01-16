@@ -1,0 +1,62 @@
+
+.showcard-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.showcard-item {
+	background-image: linear-gradient(to bottom, #00000000, #111111aa, #111111dd), url(img1.png);
+	border-radius: 16px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	max-width: 40%;
+	margin: 24px;
+	min-height: 360px;
+	padding: 20px;
+}
+
+.showcard-details-title {
+	padding-bottom: 8px;
+}
+
+.showcard-button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 8px;
+}
+
+.showcard-button-filled {
+	background-color: #eee;
+	border: 2px solid #eee;
+	border-radius: 12px;
+	color: #111;
+	display: inline-block;
+	margin: 0 12px;
+	min-width: 76px;
+	padding: 4px;
+	text-align: center;
+}
+
+.showcard-button {
+	border: 2px solid #eee;
+	border-radius: 12px;
+	color: #eee;
+	display: inline-block;
+	margin: 0 12px;
+	min-width: 76px;
+	padding: 4px;
+	text-align: center;
+}
+
+.showcard-button-filled:hover {
+	border: 2px solid #2eb9b9;
+	background-color: #2eb9b9;
+	color: #eee;
+}
+
+.showcard-button:hover {
+	border: 2px solid #2eb9b9;
+	background-color: #2eb9b9;
+}

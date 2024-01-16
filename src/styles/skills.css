@@ -1,0 +1,45 @@
+.skill-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 70%;
+}
+
+.skill-category {
+	min-width: 33%;
+	padding: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	flex-grow: 2;
+	align-items: center;
+	background-color: #334;
+	border-radius: 16px;
+	margin: 4px;
+	/*
+	box-shadow:
+    inset 60px 0 120px #333350,  
+    inset -60px 0 120px #33335f; 
+	*/
+	
+}
+
+.skill-category h2{
+	border-bottom: 2px solid white;
+	margin:8px 0px;
+}
+.skill-item-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.skill-item {
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	margin: 8px;
+}
+
+.skill-item:hover{
+	background-color: #445;
+}

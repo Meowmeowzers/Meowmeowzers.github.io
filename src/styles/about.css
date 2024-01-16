@@ -1,0 +1,37 @@
+.about-content {
+	display: flex;
+	place-content: center;
+	width: 100%;
+	min-height: inherit;
+}
+.about-content-main {
+	display: flex;
+	flex-flow: row wrap;
+	border-radius: 16px;
+	min-height: 300px;
+	padding: 20px;
+	background-color: #334;
+	width: 70%;
+	font-size: 1.125rem;
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 1.5;
+}
+.about-content-main span{
+	color:#36d8d8;
+	border-bottom:2px solid #36d8d8;
+	padding: 0 4px;
+}
+
+@media only screen and (max-width: 768px) {
+	.about-content {
+		padding-top: 8px;
+	}
+	.about-content-main {
+		padding: 16px;
+		width: 98%;
+		font-size: 1rem;
+		text-indent: 40px;
+		line-height: 1.75;
+	}
+}
