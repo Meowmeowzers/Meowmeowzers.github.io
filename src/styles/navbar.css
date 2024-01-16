@@ -16,12 +16,39 @@
 	justify-self: flex-start;
 	flex-grow: 1;
 }
+.navmenu-button{
+	display: none;
+}
+.navmenu-button > button{
+	font-size: 20px;
+}
+.navmenu-button > button:hover{
+	color: #30c5c5;
+}
+.navmenu {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: #111111cc;
+	font-size: 48px;
+	font-weight: bold;
+	z-index: 5;
+}
+.navmenu > li {
+	list-style-type: none;
+}
 
 @media only screen and (max-width: 768px) {
 	.navbar .navhide {
 		display: none;
 	}
-
+	.navmenu-button{
+		display:block;
+	}
 	.navicon {
 		padding: 8px;
 	}
