@@ -6,28 +6,38 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+	transition: 0.3s;
+	margin: 0;
+	padding: 0;
+}
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #eee;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+	color: #30c5c5;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: #222 url(./assets/bg1.png) no-repeat fixed;
+	background-size: cover;
+	color: #eee;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	font-family: 'JetBrains Mono', monospace;
+	user-select: none;
 }
 
 h1 {

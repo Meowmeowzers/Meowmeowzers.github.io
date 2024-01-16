@@ -1,0 +1,28 @@
+.navbar{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-color: #111111aa;
+	font-size: 20px;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+.navbar > li{
+	list-style-type: none;
+	padding: 8px 12px;
+}
+.navicon{
+	justify-self: flex-start;
+	flex-grow: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar .navhide {
+		display: none;
+	}
+
+	.navicon {
+		padding: 8px;
+	}
+}

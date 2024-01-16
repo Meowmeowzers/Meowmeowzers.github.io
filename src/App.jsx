@@ -6,8 +6,8 @@ import Navmenu from './components/Navmenu'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Template from './components/Template'
-import './App.css'
-import './assets/css.css'
+// import './App.css'
+// import './css.css'
 
 export default function App() {
   return (
