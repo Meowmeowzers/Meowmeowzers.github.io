@@ -15,9 +15,7 @@ export default function Home(){
 					<a href="https://github.com/meowmeowzers" target="_blank"><div className="icon-github2">-</div></a>
 					<a href="https://www.linkedin.com/in/leonardo-laureta-688b35288/" target="_blank"><div className="icon-linkedin2">-</div></a>
 				</div>
-				
 					<a className="home-arrow" href="#about"><div class="icon-down">-</div></a>
-				
 			</div>
 		</section>
 	)

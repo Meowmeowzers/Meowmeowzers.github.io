@@ -1,10 +1,14 @@
 .skill-container {
+	width: 100%;
+}
+
+.skill-main{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	margin: auto;
 	width: 70%;
 }
-
 .skill-category {
 	min-width: 33%;
 	padding: 10px;
@@ -42,4 +46,90 @@
 
 .skill-item:hover{
 	background-color: #445;
+}
+
+
+.icon-cpp {
+	background-image: url(../assets/ISO_C++_Logo.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-cs {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-java {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-kt {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg);
+	background-size: 60% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-py {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg);
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-html {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg);
+	background-size: 65% 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-css {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg);
+	background-size: 65% 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-js {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg);
+	background-size: 65% 65%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-android {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-unity {
+	background-image: url(../assets/unity.svg);
+	color:#aaa;
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-git {
+	background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-github {
+	background-image: url(../assets/github-mark-white.svg);
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
 }

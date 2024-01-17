@@ -3,10 +3,11 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	width:100%;
 }
 
 .showcard-item {
-	background-image: linear-gradient(to bottom, #00000000, #111111aa, #111111dd), url(img1.png);
+	background-image: linear-gradient(to bottom, #00000000, #111111aa, #111111dd), url("../assets/img1.png");
 	border-radius: 16px;
 	display: flex;
 	flex-flow: column wrap;
@@ -14,6 +15,7 @@
 	max-width: 40%;
 	margin: 24px;
 	min-height: 360px;
+	min-width: 450px;
 	padding: 20px;
 }
 
@@ -27,6 +29,16 @@
 	margin-top: 8px;
 }
 
+.showcard-button {
+	border: 2px solid #eee;
+	border-radius: 12px;
+	color: #eee;
+	display: inline-block;
+	margin: 0 12px;
+	min-width: 76px;
+	padding: 4px;
+	text-align: center;
+}
 .showcard-button-filled {
 	background-color: #eee;
 	border: 2px solid #eee;
@@ -38,25 +50,13 @@
 	padding: 4px;
 	text-align: center;
 }
-
-.showcard-button {
-	border: 2px solid #eee;
-	border-radius: 12px;
-	color: #eee;
-	display: inline-block;
-	margin: 0 12px;
-	min-width: 76px;
-	padding: 4px;
-	text-align: center;
+.showcard-button:hover {
+	border: 2px solid #2eb9b9;
+	background-color: #2eb9b9;
+	color: white;
 }
-
 .showcard-button-filled:hover {
 	border: 2px solid #2eb9b9;
 	background-color: #2eb9b9;
 	color: #eee;
-}
-
-.showcard-button:hover {
-	border: 2px solid #2eb9b9;
-	background-color: #2eb9b9;
 }

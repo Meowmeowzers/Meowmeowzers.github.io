@@ -59,10 +59,41 @@
 }
 .home-arrow {
 	flex-grow: 1;
-	/* TODO */
 	padding-right: 8px;
 }
-
+.icon-github2 {
+	background-image: url("../assets/github2.svg");
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px;
+	filter: invert(90%);
+}
+.icon-email{
+	background-image: url("../assets/email.svg");
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px;
+	filter: invert(90%);
+}
+.icon-linkedin2 {
+	background-image: url("../assets/linkedin2.svg");
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: invert(100%);
+	padding:20px;
+	filter: invert(90%);
+}
+.icon-down {
+	background-image: url("../assets/arrow-up.svg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:20px 30px;
+	rotate: 180deg;
+}
 @media only screen and (max-width: 768px) {
 	.home-container{
 		height:85vh;
