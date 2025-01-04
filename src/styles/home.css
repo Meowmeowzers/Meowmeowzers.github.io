@@ -47,6 +47,7 @@
 .home-resume-button:hover {
 	border: 2px solid #2eb9b9;
 	background-color: #2eb9b9;
+	color: white;
 }
 .home-social {
 	display:flex;
@@ -58,7 +59,10 @@
 	background-color: #2eb9b933;
 }
 .home-arrow {
-	flex-grow: 1;
+	rotate: 180deg;
+	height: 50px;
+	width: 50px;
+	border: 1px solid white;
 	padding-right: 8px;
 }
 .icon-github2 {

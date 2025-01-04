@@ -13,7 +13,7 @@ export default function Navbar(){
 	return(
 		<nav>
 			<ul className="navbar">
-				<li className="navicon"><a href="#home">ICON</a></li>
+				<li className="navicon"><a href="#home">HOME</a></li>
 				<li className="navhide"><a href="#about">ABOUT</a></li>
 				<li className="navhide"><a href="#skills">SKILLS</a></li>
 				<li className="navhide"><a href="#projects">PROJECTS</a></li>

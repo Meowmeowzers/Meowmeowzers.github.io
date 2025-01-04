@@ -1,6 +1,9 @@
 import "../styles/footer.css";
 
 export default function Footer(){
+
+	let year = new Date();
+	
 	return(
 		<div className="footer" id="footer">
 			<div className="footer-container">
@@ -18,7 +21,7 @@ export default function Footer(){
 			<br/><hr/><br/>
 			
 			<div className="footer-item-copy">
-				<p className="footer-copy">Copyright ©2023, Leonardo Laureta.</p>
+				<p className="footer-copy">Copyright ©{year.getUTCFullYear()}, Leonardo Laureta.</p>
 			</div>
 		</div>
 	)

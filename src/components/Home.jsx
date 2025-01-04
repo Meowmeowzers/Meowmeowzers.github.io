@@ -11,11 +11,11 @@ export default function Home(){
 			<div className="home-bottom">
 				<a className="home-resume-button" href="#">Resume</a>
 				<div className="home-social">
-					<a href="mailto:leolaureta123@gmail.com" target="_blank"><div className="icon-email">-</div></a>
-					<a href="https://github.com/meowmeowzers" target="_blank"><div className="icon-github2">-</div></a>
-					<a href="https://www.linkedin.com/in/leonardo-laureta-688b35288/" target="_blank"><div className="icon-linkedin2">-</div></a>
+					<a href="mailto:leolaureta123@gmail.com" target="_blank"><div className="icon-email"></div></a>
+					<a href="https://github.com/meowmeowzers" target="_blank"><div className="icon-github2"></div></a>
+					<a href="https://www.linkedin.com/in/leonardo-laureta-688b35288/" target="_blank"><div className="icon-linkedin2"></div></a>
 				</div>
-					<a className="home-arrow" href="#about"><div class="icon-down">-</div></a>
+				{/* <a className="" href="#about"><button><img src="../src/assets/arrow-up.svg" height="30px"/></button></a> */}
 			</div>
 		</section>
 	)
